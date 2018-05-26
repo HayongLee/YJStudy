@@ -1,9 +1,12 @@
 # Naming
 
 
+&nbsp;
+&nbsp;    
 # Promote Clear Usage
 
 
+&nbsp;
 ## 모호성을 피하기 위해 필요한 모든 단어를 포함한다.
 
 
@@ -24,7 +27,6 @@ employees.remove(x) // unclear: are we removing x?
 
 
 &nbsp;      
-&nbsp;      
 ## 불필요한 단어는 생략한다.
 
 
@@ -44,7 +46,6 @@ allViews.remove(cancelButton) // clearer
 흔히 모호성을 피하기 위해 반복되는 타입 정보가 필요하지만 일반적으로 매개변수의 타입보다는 매개변수의 역할을 설명하는 단어를 사용하는 것이 좋다.
 
 
-&nbsp;      
 &nbsp;  
 ## 역할에 따라 변수, 매개변수 이름 및 관련 타입을 지정한다.
 
@@ -78,7 +79,6 @@ protocol Sequence {
 ```
 
 
-&nbsp;      
 &nbsp;  
 ## 취약한 타입 정보를 보완한다.
 
@@ -98,7 +98,7 @@ grid.addObserver(self, forKeyPath: graphics) // clear
 ```
 
 
-&nbsp;      
+&nbsp;     
 &nbsp;  
 # Strive for Fluent Usage
 
@@ -125,8 +125,7 @@ AudioUnit.instantiate(
     options: [.inProcess], completionHandler: stopProgressBar)
 ```
 
-
-&nbsp;      
+    
 &nbsp;  
 ## make를 사용하여 팩토리 메서드 이름을 시작
 
@@ -134,7 +133,6 @@ AudioUnit.instantiate(
 "make"를 사용하여 **팩토리 메서드 이름을 시작한다**(e.g. 'x.makeIterator()').
 
 
-&nbsp;      
 &nbsp;  
 ## 초기화 및 팩토리 메서드 호출
 
@@ -160,8 +158,7 @@ let ref = Link(to: destination)
 let rgbForeground = RGBColor(cmykForeground)
 ```
 
-
-&nbsp;      
+   
 &nbsp;  
 ## 부가 효과에 따라 함수 및 메서드 이름을 지정한다.
 
@@ -207,7 +204,6 @@ Nonmutating | Mutating
 'j = c.successor(i)' | 'c.formSuccessor(&i)'
 
 
-&nbsp;      
 &nbsp;  
 ## 부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다.
 
@@ -215,7 +211,6 @@ Nonmutating | Mutating
 **부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다**(e.g. 'x.isEmpty', 'line1.intersects(line2)').
 
 
-&nbsp;      
 &nbsp;  
 ## 어떤 무언가를 설명하는 프로토콜은 명사로 읽어야 한다.
 
@@ -223,7 +218,6 @@ Nonmutating | Mutating
 **어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. 'Collection').
 
 
-&nbsp;      
 &nbsp;  
 ## 기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다.
 
@@ -231,7 +225,6 @@ Nonmutating | Mutating
 **기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다**(e.g. 'Equatable', 'ProgressReporting').
 
 
-&nbsp;      
 &nbsp;  
 ## 다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.
 
@@ -239,8 +232,6 @@ Nonmutating | Mutating
 **다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.** 
 
 
-&nbsp;      
-&nbsp;  
 &nbsp;
 &nbsp;      
 ### [Swift API Design Guidelines Naming](https://swift.org/documentation/api-design-guidelines/#naming)
