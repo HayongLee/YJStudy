@@ -1,6 +1,11 @@
 # Naming
 
 
+* [Promote Clear Usage](#promote-clear-usage)
+* [Strive for Fluent Usage](#strive-for-fluent-usage)
+
+
+&nbsp;      
 ## Promote Clear Usage
 
 
@@ -105,7 +110,7 @@ grid.addObserver(self, forKeyPath: graphics) // clear
 
 **메서드 및 함수 이름은 사용 장소가 문법적 영어 구를 형성하는 것을 선호한다.**
 ```
-x.isert(y, at: z)			    // "x, insert y at z"
+x.isert(y, at: z)       // "x, insert y at z"
 x.subView(havingColor: y)   	// "x's subviews having color y"
 x. capitalizingNouns()		// "x, capitalizing nouns"
 ```
