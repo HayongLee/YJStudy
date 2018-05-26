@@ -6,7 +6,6 @@
 # Promote Clear Usage
 
 
-&nbsp;
 ## 모호성을 피하기 위해 필요한 모든 단어를 포함한다.
 
 
