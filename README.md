@@ -5,7 +5,7 @@
 * 애플 개발자 문서 번역
     * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
     * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer#configuring-and-controlling-playback)
-    * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate#responding-to-sound-playback-completion)
+    * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
     * [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
 
 
