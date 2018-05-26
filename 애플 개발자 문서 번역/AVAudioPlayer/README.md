@@ -38,6 +38,7 @@ AVAudioPlayer 클래스를 사용하면 iOS 및 macOS에서 사용할 수 있는
 iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSession]() 및 [AVAudioSessionDelegate]()를 참조한다.
 
 
+&nbsp;      
 ## Topics
 ### Initializing an AVAudioPlayer Object
 * `init(contentsOf: URL)`
