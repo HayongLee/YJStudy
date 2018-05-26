@@ -93,7 +93,7 @@ AudioUnit.instantiate(
 ```
 
 ### make를 사용
-"make"를 사용하여 **팩토리 메서드 이름을 시작한다*, e.g. x.makeIterator().
+"make"를 사용하여 **팩토리 메서드 이름을 시작한다**, e.g. x.makeIterator().
 
 ### 초기화 및 팩토리 메서드 호출
 **초기화 및 팩토리 메서드 호출**의 첫 번째 인수는 기본 이름으로 시작하는 구를 형성해서는 안된다, e.g. x.makeWidget(cogCount: 47)
@@ -146,8 +146,9 @@ s.stripNewlines()
 let oneLine = t.strippingNewlines()
 ```
 * 동작이 명사에 의해 자연스럽게 기술될 때, 비변형 메서드에 명사를 사용하고 "form" 접두사를 적용하여 변형 메서드를 명명한다.
+
 Nonmutating | Mutating
-------------- | --------
+------------ | -------------
 x = y.union(z) | y.formUnion(z)
 j = c.successor(i) | c.formSuccessor(&i)
 
