@@ -1,9 +1,12 @@
 # Naming
 
-## Promote Clear Usage
+
+# Promote Clear Usage
 
 
-### 모호성을 피하기 위해 필요한 모든 단어를 포함한다.
+## 모호성을 피하기 위해 필요한 모든 단어를 포함한다.
+
+
 이름이 사용된 코드를 읽는 사람을 위해 **모호성을 피하기 위해 필요한 모든 단어를 포함한다.**
 
 
@@ -20,7 +23,11 @@ employees.remove(x) // unclear: are we removing x?
 ```
 
 
-### 불필요한 단어는 생략한다.
+
+
+## 불필요한 단어는 생략한다.
+
+
 **불필요한 단어는 생략한다.** 이름에 나오는 모든 단어는 사용 장소에서 중요한 정보를 전달해야 한다.
 
 
@@ -36,9 +43,15 @@ allViews.remove(cancelButton) // clearer
 ```
 흔히 모호성을 피하기 위해 반복되는 타입 정보가 필요하지만 일반적으로 매개변수의 타입보다는 매개변수의 역할을 설명하는 단어를 사용하는 것이 좋다.
 
-### 역할에 따라 변수, 매개변수 이름 및 관련 타입을 지정한다.
+
+
+
+## 역할에 따라 변수, 매개변수 이름 및 관련 타입을 지정한다.
+
+
 타입 제약 조건보다는 **역할에 따라 변수, 매개변수 이름 및 관련 타입을 지정한다.**
 ```
+// 잘못된 방법
 var string = "Hello"
 protocol ViewController {
     associatedtype ViewType: View
@@ -64,8 +77,15 @@ protocol Sequence {
 }
 ```
 
-### 취약한 타입 정보를 보완한다.
+
+
+
+## 취약한 타입 정보를 보완한다.
+
+
 매개변수의 역할을 명확히하기 위해 **취약한 타입 정보를 보완한다.**
+
+
 특히 매개변수 타입이 NSObject, Any, AnyObject 또는 Int와 String과 같은 기본 타입인 경우 사용 시점에서 타입 정보와 문맥이 의도를 충분히 전달하지 못할 수 있다.
 ```
 func add(_ observer: NSObject, for keyPath: String)
@@ -77,12 +97,19 @@ func addObserver(_ observer: NSObject, forKeyPath path: String)
 grid.addObserver(self, forKeyPath: graphics) // clear
 ```
 
-## Strive for Fluent Usage
-### 메서드 및 함수 이름은 사용 장소가 문법적 영어 구를 형성하는 것을 선호한다.
+
+
+
+# Strive for Fluent Usage
+
+
+## 메서드 및 함수 이름은 사용 장소가 문법적 영어 구를 형성하는 것을 선호한다.
+
+
 **메서드 및 함수 이름은 사용 장소가 문법적 영어 구를 형성하는 것을 선호한다.**
 ```
-x.isert(y, at: z)			// "x, insert y at z"
-x.subView(havingColor: y)	// "x's subviews having color y"
+x.isert(y, at: z)			    // "x, insert y at z"
+x.subView(havingColor: y)   	// "x's subviews having color y"
 x. capitalizingNouns()		// "x, capitalizing nouns"
 ```
 ```
@@ -98,11 +125,23 @@ AudioUnit.instantiate(
     options: [.inProcess], completionHandler: stopProgressBar)
 ```
 
-### make를 사용
-"make"를 사용하여 **팩토리 메서드 이름을 시작한다**, e.g. x.makeIterator().
 
-### 초기화 및 팩토리 메서드 호출
-**초기화 및 팩토리 메서드 호출**의 첫 번째 인수는 기본 이름으로 시작하는 구를 형성해서는 안된다, e.g. x.makeWidget(cogCount: 47)
+
+
+## make를 사용하여 팩토리 메서드 이름을 시작
+
+
+"make"를 사용하여 **팩토리 메서드 이름을 시작한다**(e.g. x.makeIterator()).
+
+
+
+
+## 초기화 및 팩토리 메서드 호출
+
+
+**초기화 및 팩토리 메서드 호출**의 첫 번째 인수는 기본 이름으로 시작하는 구를 형성해서는 안된다(e.g. x.makeWidget(cogCount: 47)).
+
+
 예를 들어, 이 호출에 대한 첫 번째 인수는 기본 이름과 동일한 구문의 일부로 읽지 않는다:
 ```
 let foreground = Color(red: 32, green: 64, blue: 128)
@@ -121,20 +160,26 @@ let ref = Link(to: destination)
 let rgbForeground = RGBColor(cmykForeground)
 ```
 
-### 부작용에 따라 함수 및 메서드 이름을 지정한다.
-**부작용에 따라 함수 및 메서드 이름을 지정한다.**
-* 부작용이 없을 경우 명사구로 읽어야 한다, e.g. x.distance(to: y), i.successor().
-* 부작용이 있을 경우 필수 동사구로 읽어야 한다. e.g. print(x), x.sort(), x.append(y)
+
+
+
+## 부가 효과에 따라 함수 및 메서드 이름을 지정한다.
+
+
+**부가 효과(값의 변화)에 따라 함수 및 메서드 이름을 지정한다.**
+
+
+* 부가 효과가 없을 경우 명사구로 읽어야 한다(e.g. x.distance(to: y), i.successor()).
+* 부가 효과가 있을 경우 필수 동사구로 읽어야 한다(e.g. print(x), x.sort(), x.append(y)).
 * **이름 변형/비변형 메서드 쌍**은 일관되어야 한다. 변형 메서드는 종종 비변형과 유사한 의미를 가지지만 비변형은 인스턴스를 현재 위치에서 업데이트하는 대신 새로운 값을 반환한다.
-    * 동작이 동사에 의해 자연스럽게 기술될 때, 반드시 변형 메서드에 동사를 사용하고 비변형 메서드 이름에는 "ed" 또는 "ing" 접미사를 적용한다.
+* 동작이 동사에 의해 자연스럽게 기술될 때, 반드시 변형 메서드에 동사를 사용하고 비변형 메서드 이름에는 "ed" 또는 "ing" 접미사를 적용한다.
 
-Mutating | Nonmutating
+Nonmutating | Mutating
 ------------ | -------------
-x.sort() | z = x.sorted()
-x.append(y) | z = x.appending(y)
+z = x.sorted() | x.sort()  
+z = x.appending(y) | x.append(y)
 
-동사의 과거 분사("ed")를 사용하여 비변형 메서드의 이름을 지정하는 것이 좋다:
-
+* 동사의 과거 분사("ed")를 사용하여 비변형 메서드의 이름을 지정하는 것이 좋다:
 ```
 // Reverses 'self' in-place.
 mutating func reverse()
@@ -154,24 +199,46 @@ func strippingNewlines() -> String
 s.stripNewlines()
 let oneLine = t.strippingNewlines()
 ```
-* 동작이 명사에 의해 자연스럽게 기술될 때, 비변형 메서드에 명사를 사용하고 "form" 접두사를 적용하여 변형 메서드를 명명한다.
+* 동작이 명사에 의해 자연스럽게 기술될 때, 비변형 메서드에 명사를 사용하고 번형 메서드에는 "form" 접두사를 적용하여 명명한다.
 
 Nonmutating | Mutating
 ------------ | -------------
 x = y.union(z) | y.formUnion(z)
 j = c.successor(i) | c.formSuccessor(&i)
 
-### 부울 메서드 및 속성의 사용은 사용이 비변형일 때 수신자에 대한 단언으로 읽어야 한다.
-**부울 메서드 및 속성의 사용은 사용이 비변형일 때 수신자에 대한 단언으로 읽어야 한다**, e.g. x.isEmpty, line1.intersects(line2)
 
-### 무엇인지를 설명하는 프로토콜은 명사로 읽어야 한다.
-**무엇인지를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. Collection).
 
-### 기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다.
+
+## 부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다.
+
+
+**부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다**(e.g. x.isEmpty, line1.intersects(line2)).
+
+
+
+
+## 어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다.
+
+
+**어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. Collection).
+
+
+
+
+## 기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다.
+
+
 **기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다**(e.g. Equatable, ProgressReporting).
 
-### 다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.
+
+
+
+## 다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.
+
+
 **다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.**
 
 
-[Naming](https://swift.org/documentation/api-design-guidelines/#naming)
+
+
+### [Swift API Design Guidelines Naming](https://swift.org/documentation/api-design-guidelines/#naming)
