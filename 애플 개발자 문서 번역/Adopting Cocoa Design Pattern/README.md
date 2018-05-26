@@ -126,4 +126,5 @@ class Singleton {
 
 &nbsp;      
 &nbsp;      
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
 ### [Apple Developer Documentation Adopting Cocoa Design Patterns](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/AdoptingCocoaDesignPatterns.html#//apple_ref/doc/uid/TP40014216-CH7-ID6)
