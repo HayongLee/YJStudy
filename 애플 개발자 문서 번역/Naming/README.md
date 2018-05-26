@@ -2,9 +2,12 @@
 
 ## Promote Clear Usage
 
+
 ### 모호성을 피하기 위해 필요한 모든 단어를 포함한다.
 이름이 사용된 코드를 읽는 사람을 위해 **모호성을 피하기 위해 필요한 모든 단어를 포함한다.**
-예를 들어, 컬렉션 내의 주어진 위치에서 요소를 제거하는 메서드를 생각해보면
+
+
+예를 들어, 컬렉션 내의 주어진 위치에서 요소를 제거하는 메서드를 생각해보면:
 ```
 extenstion List {
     public mutating func remove(at position: Index) -> Element 
@@ -16,8 +19,11 @@ employees.remove(at: x)
 employees.remove(x) // unclear: are we removing x?
 ```
 
+
 ### 불필요한 단어는 생략한다.
 **불필요한 단어는 생략한다.** 이름에 나오는 모든 단어는 사용 장소에서 중요한 정보를 전달해야 한다.
+
+
 의도와 의미를 명확하게 하기 위해 더 많은 단어가 필요할 수 있지만 독자가 이미 소유하고 있는 정보같은 중복되는 단어는 생략해야 한다. 특히 타입 정보만 반복하는 단어는 생략한다.
 ```
 public mutating func removeElement(_ member: Element) -> Element?
