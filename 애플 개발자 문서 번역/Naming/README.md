@@ -217,7 +217,7 @@ j = c.successor(i) | c.formSuccessor(&i)
 
 
 
-## 어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다.
+## 어떤 무언가를 설명하는 프로토콜은 명사로 읽어야 한다.
 
 
 **어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. Collection).
@@ -237,14 +237,8 @@ j = c.successor(i) | c.formSuccessor(&i)
 
 
 **다른 타입, 속성, 변수 및 상수의 이름은 명사로 읽어야 한다.**
-
-
-
-
-
-
-
-
-
-
+#
+#
+#
+#
 ### [Swift API Design Guidelines Naming](https://swift.org/documentation/api-design-guidelines/#naming)
