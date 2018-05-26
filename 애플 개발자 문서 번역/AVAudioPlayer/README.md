@@ -26,7 +26,7 @@
 * 재생 레벨 미러링에 사용할 수 있는 데이터 얻기
 
 
-AVAudioPlayer 클래스를 사용하면 iOS 및 macOS에서 사용할 수 있는 오디오 형식으로 사운드를 재생할 수 있다. (iOS의 수신 전화와 같은) 인터럽트를 처리하고 사운드 재생이 끝나면 사용자 인터페이스를 업데이트하는 델리게이트를 구현한다. 델리게이트 메서드는 [AVAudioPlayerDelegate]()에 설명되어 있다.
+AVAudioPlayer 클래스를 사용하면 iOS 및 macOS에서 사용할 수 있는 오디오 형식으로 사운드를 재생할 수 있다. (iOS의 수신 전화와 같은) 인터럽트를 처리하고 사운드 재생이 끝나면 사용자 인터페이스를 업데이트하는 델리게이트를 구현한다. 델리게이트 메서드는 [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate#responding-to-sound-playback-completion)에 설명되어 있다.
 
 
 오디오 플레이어를 재생, 일시 중지 또는 중지하려면 [Configuring and Controlling Playback](#configuring-and-controlling-playback)에서 설명한 재생 제어 방법 중 하나를 호출한다. 
