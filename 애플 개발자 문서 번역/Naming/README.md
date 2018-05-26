@@ -20,7 +20,7 @@ extenstion List {
 }
 employees.remove(at: x)
 ```
-여기서 'at'을 생략한다면 'x'를 사용하여 제거할 요소의 위치를 나타내는 것이 아니라 'x'와 동일한 요소를 검색하고 제거한다는 것을 암시할 수 있다.
+여기서 `at`을 생략한다면 `x`를 사용하여 제거할 요소의 위치를 나타내는 것이 아니라 `x`와 동일한 요소를 검색하고 제거한다는 것을 암시할 수 있다.
 ```
 employees.remove(x) // unclear: are we removing x?
 ```
@@ -38,7 +38,7 @@ employees.remove(x) // unclear: are we removing x?
 public mutating func removeElement(_ member: Element) -> Element?
 allViews.removeElement(cancelButton)
 ```
-이 경우, 'Element'라는 단어는 호출 장소에서 중요한 부분을 추가하지 않는다. 다음 API가 더 좋을 것이다:
+이 경우, `Element`라는 단어는 호출 장소에서 중요한 부분을 추가하지 않는다. 다음 API가 더 좋을 것이다:
 ```
 public mutating func remove(_ member: Element) -> Element?
 allViews.remove(cancelButton) // clearer
@@ -71,7 +71,7 @@ class ProductionLine {
     func restock(from supplier: WidgetFactory)
 }
 ```
-만약 관련 타입이 프로토콜 제약 조건에 너무 밀접하게 바인딩되어 프로토콜 이름이 역할인 경우, 관련 타입 이름에 'Type'을 추가하여 충돌을 방지한다:
+만약 관련 타입이 프로토콜 제약 조건에 너무 밀접하게 바인딩되어 프로토콜 이름이 역할인 경우, 관련 타입 이름에 `Type`을 추가하여 충돌을 방지한다:
 ```
 protocol Sequence {
     associatedtype IteratorType: Iterator
@@ -86,7 +86,7 @@ protocol Sequence {
 매개변수의 역할을 명확히하기 위해 **취약한 타입 정보를 보완한다.**
 
 
-특히 매개변수 타입이 'NSObject', 'Any', 'AnyObject' 또는 'Int'와 'String'과 같은 기본 타입인 경우 사용 시점에서 타입 정보와 문맥이 의도를 충분히 전달하지 못할 수 있다.
+특히 매개변수 타입이 `NSObject`, `Any`, `AnyObject` 또는 `Int`와 `String`과 같은 기본 타입인 경우 사용 시점에서 타입 정보와 문맥이 의도를 충분히 전달하지 못할 수 있다.
 ```
 func add(_ observer: NSObject, for keyPath: String)
 grid.add(self, for: graphics) // vague
@@ -130,14 +130,14 @@ AudioUnit.instantiate(
 ## make를 사용하여 팩토리 메서드 이름을 시작
 
 
-"make"를 사용하여 **팩토리 메서드 이름을 시작한다**(e.g. 'x.makeIterator()').
+"make"를 사용하여 **팩토리 메서드 이름을 시작한다**(e.g. `x.makeIterator()`).
 
 
 &nbsp;  
 ## 초기화 및 팩토리 메서드 호출
 
 
-**초기화 및 팩토리 메서드 호출**의 첫 번째 인수는 기본 이름으로 시작하는 구를 형성해서는 안된다(e.g. 'x.makeWidget(cogCount: 47)').
+**초기화 및 팩토리 메서드 호출**의 첫 번째 인수는 기본 이름으로 시작하는 구를 형성해서는 안된다(e.g. `x.makeWidget(cogCount: 47)`).
 
 
 예를 들어, 이 호출에 대한 첫 번째 인수는 기본 이름과 동일한 구문의 일부로 읽지 않는다:
@@ -166,15 +166,15 @@ let rgbForeground = RGBColor(cmykForeground)
 **부가 효과(값의 변화)에 따라 함수 및 메서드 이름을 지정한다.**
 
 
-* 부가 효과가 없을 경우 명사구로 읽어야 한다(e.g. 'x.distance(to: y), i.successor()').
-* 부가 효과가 있을 경우 필수 동사구로 읽어야 한다(e.g. 'print(x)', 'x.sort()', 'x.append(y)').
+* 부가 효과가 없을 경우 명사구로 읽어야 한다(e.g. `x.distance(to: y), i.successor()`).
+* 부가 효과가 있을 경우 필수 동사구로 읽어야 한다(e.g. `print(x)`, `x.sort()`, `x.append(y)`).
 * **이름 변형/비변형 메서드 쌍**은 일관되어야 한다. 변형 메서드는 종종 비변형과 유사한 의미를 가지지만 비변형은 인스턴스를 현재 위치에서 업데이트하는 대신 새로운 값을 반환한다.
 * 동작이 동사에 의해 자연스럽게 기술될 때, 반드시 변형 메서드에 동사를 사용하고 비변형 메서드 이름에는 "ed" 또는 "ing" 접미사를 적용한다.
 
 Nonmutating | Mutating
 ------------ | -------------
-'z = x.sorted()' | 'x.sort()'  
-'z = x.appending(y)' | 'x.append(y)'
+`z = x.sorted()` | `x.sort()`  
+`z = x.appending(y)` | `x.append(y)`
 
 * 동사의 과거 분사("ed")를 사용하여 비변형 메서드의 이름을 지정하는 것이 좋다:
 ```
@@ -200,29 +200,29 @@ let oneLine = t.strippingNewlines()
 
 Nonmutating | Mutating
 ------------ | -------------
-'x = y.union(z)' | 'y.formUnion(z)'
-'j = c.successor(i)' | 'c.formSuccessor(&i)'
+`x = y.union(z)` | `y.formUnion(z)`
+`j = c.successor(i)` | `c.formSuccessor(&i)`
 
 
 &nbsp;  
 ## 부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다.
 
 
-**부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다**(e.g. 'x.isEmpty', 'line1.intersects(line2)').
+**부울 메서드 및 속성의 사용은 비변형일 때 수신자에 대한 단언으로 읽어야 한다**(e.g. `x.isEmpty`, `line1.intersects(line2)`).
 
 
 &nbsp;  
 ## 어떤 무언가를 설명하는 프로토콜은 명사로 읽어야 한다.
 
 
-**어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. 'Collection').
+**어떤 무언가를를 설명하는 프로토콜은 명사로 읽어야 한다**(e.g. `Collection`).
 
 
 &nbsp;  
 ## 기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다.
 
 
-**기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다**(e.g. 'Equatable', 'ProgressReporting').
+**기능을 설명하는 프로토콜은 접미어 able, ible, ing를 사용하여 명명한다**(e.g. `Equatable`, `ProgressReporting`).
 
 
 &nbsp;  
