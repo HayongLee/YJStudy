@@ -33,7 +33,7 @@
 기본 오디오 세션은 유용한 동작을 제공하지만 미디어 재생 애플리케이션을 제작할 때 필요한 일반적인 오디오 동작을 제공하지는 않는다. 기본 동작을 변경하려면 앱의 오디오 세션 카테고리를 구성한다.
 
 
-사용할 수 있는 카테고리는 7가지([Audio Session Categories and Modes](https://developer.apple.com/library/content/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10) 참조)이지만 재생 앱에서 가장 필요한 카테고리는 [AVAudioSessionCategoryPlayback]()이다. 이 카테고리는 오디오 재생이 앱의 핵심 기능임을 나타낸다. 이 카테고리를 지정하면 벨소리/무음 스위치가 무음 모드(iOS 전용)로 설정된 상태에서도 앱의 오디오가 계속된다. 오디오 AirPlay 및 Picture in Picture 백그라운드 모드를 사용하는 경우 앱에서 백그라운드 오디오를 재생할 수도 있다([Enabling Background Audio]() 참조).
+사용할 수 있는 카테고리는 7가지([Audio Session Categories and Modes](https://developer.apple.com/library/content/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10) 참조)이지만 재생 앱에서 가장 필요한 카테고리는 [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)이다. 이 카테고리는 오디오 재생이 앱의 핵심 기능임을 나타낸다. 이 카테고리를 지정하면 벨소리/무음 스위치가 무음 모드(iOS 전용)로 설정된 상태에서도 앱의 오디오가 계속된다. 오디오 AirPlay 및 Picture in Picture 백그라운드 모드를 사용하는 경우 앱에서 백그라운드 오디오를 재생할 수도 있다([Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio) 참조).
 
 
 AVAudioSession 객체를 사용하여 앱의 오디오 세션을 구성한다. AVAudioSession은 오디오 세션 카테고리를 설정하고 다른 구성을 수행하는데 사용되는 싱글톤 객체이다. 앱 생명주기 전체에서 오디오 세션과 상호 작용할 수 있지만, 다음 예와 같이 앱 실행시 이 구성을 수행하는 것이 유용한 경우가 많다.
