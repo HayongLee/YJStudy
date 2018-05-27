@@ -35,7 +35,7 @@ AVAudioPlayer 클래스를 사용하면 iOS 및 macOS에서 사용할 수 있는
 이 클래스는 Objective-C로 선언된 프로퍼티 기능을 사용하여 사운드 타임 라인 내의 재생 지점과 같은 사운드에 대한 정보를 관리하고 볼륨 및 반복과 같은 재생 옵션에 접근한다.
 
 
-iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession) 및 [AVAudioSessionDelegate]()를 참조한다.
+iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession) 및 [AVAudioSessionDelegate](https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate)를 참조한다.
 
 
 &nbsp;      
