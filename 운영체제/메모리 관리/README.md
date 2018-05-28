@@ -3,7 +3,7 @@
 
 * [주소 바인딩](#주소-바인딩)
 * [메모리 관리와 관련된 용어](#메모리-관리와-관련된-용어)
-    * [동적 로딩(dynamic loding)](#동적-로딩)
+    * [동적 로딩(dynamic loding)](#동적-로딩-(-dynamic-loding-))
     * [동적 연결(dynamic linking)](#동적-연결)
     * [중첩(overlays)](#중첩)
     * [스와핑(swapping)](#스와핑)
