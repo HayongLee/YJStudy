@@ -95,7 +95,7 @@ iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSessio
     * 오디오 플레이어와 관련된 사운드의 총 지속 시간(초)
 * `var currentTime: TimeInterval`
     * 오디오 플레어와 관련된 사운드 타임 라인 내의 재생 지점(초)
-* `deviceCurrentTime: TimeInterval`
+* `var deviceCurrentTime: TimeInterval`
     * 오디오 출력 장치의 시간 값(초)
 * `var url: URL?`
     * 오디오 플레이어와 관련된 사운드의 URL
@@ -113,7 +113,7 @@ iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSessio
     * 오디오 플레이어의 오디오 레벨 미터링 켜기/끄기 상태를 지정하는 부울 값
 * `func averagePower(forChannel: Int)`
     * 재생되고 있는 사운드의 지정된 채널의 평균 전력을 데시벨 단위로 반환한다.
-* `func peekPower(forChannel: Int)`
+* `func peakPower(forChannel: Int)`
     * 재생되고 있는 사운드의 지정된 채널의 피크 파워를 데시벨 단위로 반환한다.
 * `func updateMeters()`
     * 오디오 플레이어의 모든 채널에 대한 평균 및 최대 전력 값을 새로고침
