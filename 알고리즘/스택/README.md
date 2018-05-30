@@ -1,8 +1,8 @@
 # 스택 
 
 
-* [개요](#Overview)
-* [구현](#Implementation)
+* [개요](#개요)
+* [구현](#구현)
 
 
 &nbsp;
