@@ -1,8 +1,8 @@
 # 스택 
 
 
-* [개요](#개요)
-* [구현](#구현)
+* [개요](#Overview)
+* [구현](#Implementation)
 
 
 &nbsp;
@@ -57,6 +57,7 @@ public struct ArrayStack<T> {
 }
 ```
 
+
 ### 스택 구조의 활용
 ```
 var myStack = ArrayStack<Int>()
@@ -72,4 +73,5 @@ var x = myStack.pop()       // x = 23
 &nbsp;
 &nbsp;      
 ### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### 출처: [스위프트 데이터 구조와 알고리즘](http://acornpub.co.kr/book/swift-structure-algorithms)
 
