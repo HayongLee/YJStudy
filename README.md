@@ -2,6 +2,14 @@
 공부한 내용들 정리(iOS, 알고리즘, 운영체제, 데이터베이스, 네트워크)
 
 
+### 알고리즘
+* [스택](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스택)
+* [큐](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/큐)
+* [순환 버퍼](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/순환%20버퍼)
+* [우선순위 큐](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/우선순위%20큐)
+* [연결 리스트(스택 리스트)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/연결%20리스트(스택%20리스트))
+
+
 ### 애플 개발자 문서 번역
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
 * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
@@ -15,6 +23,7 @@
 
 ### 운영 체제
 * [메모리 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/메모리%20관리)
+
 
 
 &nbsp;
