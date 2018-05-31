@@ -17,8 +17,10 @@
 * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
 * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
 * [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
+* [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
 * [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
+* [View Controller Catalog for iOS](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/View%20Controller%20Catalog%20for%20iOS)
 
 
 ### 운영 체제
