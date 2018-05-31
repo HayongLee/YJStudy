@@ -11,6 +11,8 @@
 * 대상 데이터가 이미 어느정도 정렬돼 있는 경우, 혹은 규모가 크지 않은 경우 유용, 이런 경우엔 O(nlogn)인 병합 정렬보다도 높은 성능
 * 삽입 정렬 알고리즘은 인플레이스 정렬(in-place sorting) 방식을 사용한다.
 * N-1회 반복, 처음 정렬 순서를 정할 때 0번째 요소의 순서가 이미 정해졌음을 감안해서 i-1로 시작한다.
+
+
 ![](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/삽입%20정렬/images/insertion-sort.jpg)
 
 
