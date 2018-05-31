@@ -17,7 +17,7 @@ H.I.G 문서는 애플리케이션을 개발할 때 필요한 디자인과 동�
 * [System Capabilities](#system-capabilities)
 * [Visual Design](#visual-design)
 * [Icons and Images](#icons-and-images)
-* [Bar](#bar)
+* [Bars](#bars)
 * [Views](#views)
 * [Controls](#controls)
 * [Extensions](#extensions)
