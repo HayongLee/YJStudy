@@ -13,7 +13,7 @@ iOS 및 tvOS 앱을 사용하려면 일부 백그라운드 작업에 특정 기�
 이러한 기능을 구성하는 가장 간단한 방법은 Xcode를 사용하는 것이다. Xcode에서 앱의 `tartget`을 선택하고 `Capabilities` 탭을 선택한다. Capabilities 탭에서 `Background Modes` 스위치를 `ON`으로 설정하고 사용 가능한 모드 목록 아래에 있는 `Audio, AirPlay, and Picture in Picture` 옵션을 선택한다.
 
 
-![](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio/Images)
+![](https://github.com/0jun0815/YJStudy/blob/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio/Images/background-modes.png)
 
 
 이 모드를 사용하도록 설정하고 오디오 세션을 구성하면 앱에서 백그라운드 오디오를 재생할 수 있다.
