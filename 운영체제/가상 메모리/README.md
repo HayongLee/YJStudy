@@ -11,7 +11,7 @@
     * [요구 페이징의 페이지 부재 처리](#요구-페이징의-페이지-부재-처리)
     * [요구 페이징의 성능](#요구-페이징의-성능)
 * [페이지 교체](#페이지-교체)
-    * [최적 페이지 교체(optimal page replacement)](#최적-페이지-교체(optimal-page-replacement))
+    * [최적 페이지 교체(optimal page replacement)](#최적-페이지-교체optimal-page-replacement)
     * [FIFO 알고리즘](#fifo-알고리즘)
     * [LRU 알고리즘](#lru-알고리즘)
     * [LFU 알고리즘](#lfu-알고리즘)
