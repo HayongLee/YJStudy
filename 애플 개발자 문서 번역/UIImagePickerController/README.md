@@ -28,7 +28,7 @@
 
 &nbsp;      
 ## Overview
-이미지 피커 컨트롤러는 사용자 상호 작용을 관리하고 이러한 상호 작용의 결과를 델리게이트 객체에 전달한다. 이미지 피커 컨트롤러의 역할과 모양은 나타내기 전에 할당한 *소스 타입*에 따라 다르다.
+이미지 피커 컨트롤러는 사용자 상호 작용을 관리하고 이러한 상호 작용의 결과를 델리게이트 객체에 전달한다. 이미지 피커 컨트롤러의 역할과 모양은 나타내기 전에 할당한 *소스 타입* 에 따라 다르다.
 * 카메라의 [sourceType](https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619167-sourcetype?changes=_5)은 새 사진이나 동영상을 찍을 수 있는 사용자 인터페이스를 제공한다(미디어 캡처를 지원하는 장치에서).
 * [photoLibrary](https://developer.apple.com/documentation/uikit/uiimagepickercontrollersourcetype/photolibrary?changes=_5) 또는 [savedPhotosAlbum](https://developer.apple.com/documentation/uikit/uiimagepickercontrollersourcetype/savedphotosalbum?changes=_5)의 sourceType은 저장된 사진 및 동영상 중에서 선택할 수 있는 사용자 인터페이스를 제공한다.
 
@@ -61,6 +61,8 @@ iPad에서 카메라의 소스 타입을 지정하면 모달(전체 화면) 또�
 
 
 > **Important**
+>
+>
 > UIImagePickerController 클래스는 세로 모드만 지원한다. 이 클래스는 그대로 사용하도록 설계되어있어 서브 클래스화를 지원하지 않는다. 이 클래스의 뷰 계층 구조는 비공개이며 한 가지 예외를 제외하고는 수정해서는 안된다. 사용자 정의 뷰를 [cameraOverlayView](https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619113-cameraoverlayview?changes=_5) 프로퍼티에 할당하고 해당 뷰를 사용하여 추가 정보를 제공하거나 카메라 인터페이스와 코드 간의 상호 작용을 관리할 수 있다.
 
 
@@ -95,7 +97,7 @@ iOS 4.0 이상에서는 사용자가 플래시 모드(플래시 LED가 있는 �
 
 &nbsp;
 ## Fully-Customized Media Capture and Browsing
-완전히 사용자 정의된 이미지 또는 동영상 캡처를 수행하려면 [Stil and Video Media Capture](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW10)에 설명 된대로 AVFoundation 프레임 워크를 사용한다.
+완전히 사용자 정의된 이미지 또는 동영상 캡처를 수행하려면 [Still and Video Media Capture](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW10)에 설명 된대로 AVFoundation 프레임 워크를 사용한다.
 
 
 사진 라이브러리를 탐색할 수 있도록 완전히 사용자 정의된 이미지 피커를 만들려면 Photos 프레임 워크의 클래스를 사용한다. 예를 들어, iOS에서 생성 및 캐시하고 타임 스탬프 및 위치 정보를 포함한 이미지 메타 데이터를 사용하거나 MapKit 및 iCloud 사진 공유와 같은 다른 기능과 통합되는 더 큰 섬네일 이미지를 표시하는 커스텀 이미지 피커를 만들 수 있다. 자세한 내용은 [Photos](https://developer.apple.com/documentation/photos?changes=_5)를 참조. Photos 프레임 워크를 사용한 미디어 탐색은 iOS 8.0부터 사용할 수 있다. 
