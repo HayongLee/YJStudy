@@ -47,6 +47,7 @@ UserDefault 클래스는 기본 시스템과 상호 작용할 수 있는 프로�
 &nbsp;
 ## Storing Default Objects
 > 기본 객체 저장
+
 UserDefaults 클래스는 Float, Double, Integer, Boolean 값 및 URL와 같은 일반적인 타입에 접근하기 위한 편의 메서드를 제공한다. 이 메서드는 [Setting Default Values](https://developer.apple.com/documentation/foundation/userdefaults#1664798)에 설명되어 있다.
 
 
@@ -59,12 +60,14 @@ UserDefaults 클래스는 Float, Double, Integer, Boolean 값 및 URL와 같은 
 &nbsp;
 ## Persisting File References
 > 파일 참조 유지
+
 파일 URL은 파일 시스템의 위치를 지정한다. [set(_:forKey:)](https://developer.apple.com/documentation/foundation/userdefaults/1414194-set) 메서드를 사용하여 특정 파일의 위치를 저장하고 사용자가 해당 파일을 이동하면 앱이 다음에 실행될 때 해당 파일을 찾을 수 없다. 파일 시스템 identity로 파일에 대한 참조를 저장하려면 [bookmarkData(options:includingResourceValuesForKeys:relativeTo:)](https://developer.apple.com/documentation/foundation/nsurl/1417795-bookmarkdata) 메서드를 사용하여 NSURL 북마크 데이터를 만들고 [set(_:forKey)](https://developer.apple.com/documentation/foundation/userdefaults/1414067-set) 메서드를 사용하여 NSURL 북마크 데이터를 지속시킬 수 있다. 그런 다음 [URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:](https://developer.apple.com/documentation/foundation/nsurl/1572035-urlbyresolvingbookmarkdata) 메서드를 사용하여 사용자 기본값에 저장된 북마크 데이터를 파일 URL로 확인할 수 있다.
 
 
 &nbsp;
 ## Responding to Defaults Changes
 > 기본값 변경에 대한 응답
+
 키-값 관찰자를 사용하여 기본값에 대한 업데이트 사항을 알릴 수 있다. [default](https://developer.apple.com/documentation/foundation/notificationcenter/1414169-default) 알림 센터에서 [didChangeNotification](https://developer.apple.com/documentation/foundation/userdefaults/1408206-didchangenotification)의 관찰자로 등록하여 로컬 기본값 데이터베이스에 대한 모든 업데이트를 알릴 수도 있다.
 
 
@@ -74,6 +77,7 @@ UserDefaults 클래스는 Float, Double, Integer, Boolean 값 및 URL와 같은 
 &nbsp;
 ## Using Defaults in Managed Environments
 > 관리 환경에서 기본값 사용
+
 앱이 관리 환경을 지원하는 경우 UserDefaults를 사용하여 관리자가 사용자를 위해 관리하는 기본 설정을 결정할 수 있다. 컴퓨터실 또는 교실과 같은 관리 환경에서 관리자 또는 교사는 사용자에 대한 기본 설정 집합을 설정하여 시스템을 구성할 수 있다. 환경 설정이 이러한 방식([Accessing Managed Environment Keys](https://developer.apple.com/documentation/foundation/userdefaults#1664949)에 설명된 방법에 따라)으로 관리되는 경우 앱은 사용자가 컨트롤을 비활성화하거나 숨김으로써 해당 환경 설정을 편집하지 못하도록 해야 한다.
 
 
@@ -89,6 +93,7 @@ UserDefaults 클래스는 Float, Double, Integer, Boolean 값 및 URL와 같은 
 &nbsp;
 ## Sandbox Considerations
 > 샌드박스 고려사항
+
 샌드박스 처리된 앱은 다음 예외를 제외하고 다른 앱의 환경 설정에 접근하거나 수정할 수 없다:
 * macOS 및 iOS의 앱 확장
 * macOS의 애플리케이션 그룹에 있는 다른 앱
@@ -100,6 +105,7 @@ UserDefaults 클래스는 Float, Double, Integer, Boolean 값 및 URL와 같은 
 &nbsp;
 ## Thread Safety
 > 스레드 안전성
+
 UserDefaults 클래스는 스레드로부터 안전하다.
 
 
@@ -107,12 +113,14 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 ## Topics
 ### Getting the Standard User Defaults Object
 > 표준 사용자 기본 객체 얻기
+
 * `class var standard: UserDefaults`
     * 공유 기본 객체를 반환한다.
 
 
 ### Creating User Defaults Objects
 > 사용자 기본 객체 생성
+
 * `init()`
     * 앱 및 현재 사용자의 기본값으로 초기화된 사용자 기본 객체를 만든다.
 * `init?(suiteName: String?)`
@@ -121,6 +129,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Getting Default Values
 > 기본 값 가져오기
+
 * `func object(forKey: String)`
     * 지정된 키와 연관된 객체를 반환한다.
 * `func url(forKey: String)`
@@ -149,6 +158,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Setting Default Values
 > 기본값 설정
+
 * `func set(Any?, forKey: String)`
     * 지정된 기본 키의 값을 설정한다.
 * `func set(Float, forKey: String)`
@@ -165,12 +175,14 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Removing Defaults
 > 기본값 제거
+
 * `func removeObject(forKey: String)`
     * 지정된 기본 키의 값을 제거한다.
 
 
 ### Maintaining Suites
 > 개발 도구 묶음 유지 보수
+
 * `func addSuite(named: String)`
     * 수신자의 검색 목록에 지정된 도메인 이름을 삽입한다.
 * `func removeSuite(named: String)`
@@ -179,12 +191,14 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Registering Defaults
 > 기본값 등록
+
 * `func register(defaults: [String: Any])`
     * 지정된 딕셔너리의 내용을 등록 도메인에 추가한다.
 
 
 ### Maintaining Persistent Domains
 > 영구 도메인 유지 보수
+
 * `func persistentDomain(forName: String)`
     * 지정된 도메인에 대한 기본값의 사전 표현을 반환한다. 
 * `func setPersistentDomain([String: Any], forName: String)`
@@ -196,6 +210,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Maintaining Volatile Domains
 > 휘발성 도메인 유지 보수
+
 * `var volatileDomainNames: [String]`
     * 현재 휘발성 도메인 이름
 * `func volatileDomain(forName: String)`
@@ -208,6 +223,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Accessing Managed Environment Keys
 > 관리 환경 키 접근
+
 * `func objectIsForced(forKey: String)`
     * 지정된 키가 관리자가 관리하는지 여부를 나타내는 부울 값을 반환한다.
 * `func objectIsForced(forKey: String, inDomain: String)`
@@ -216,6 +232,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Domains
 > 도메인
+
 * `class let argumentDomain: String`
     * 애플리케이션의 인수에서 파싱된 기본값으로 구성된 도메인이다. 애플리케이션의 커맨드-라인 호출이 포함된 하나 이상의 쌍이 기본 값이다.
 * `class let globalDomain: String`
@@ -226,6 +243,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Notifications
 > 알림
+
 * `class let didChangeNotification: NSNotification.Name`
     * 사용자 기본값이 현재 프로세스 내에서 변경될 때 게시 됨.
 * `class let sizeLimitExceededNotification: NSNotification.Name`
@@ -240,6 +258,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Legacy
 > 낡은 기술(더이상 사용하지 않는 기술)
+
 * ~~`init?(user: String)`~~
 * `func synchronize()`
     * 보류중인 기본 데이터베이스로의 비동기 업데이트를 기다리고 반환한다. 이 메서드는 불필요하므로 사용하지 않아야 한다.
