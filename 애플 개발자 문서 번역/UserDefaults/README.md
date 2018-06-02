@@ -191,7 +191,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
     * 지정된 영구 도메인에 대한 사전을 설정한다.
 * `func removePersistentDomain(forName: String)`
     * 지정된 영구 도메인의 내용을 사용자의 기본값에서 제거한다.
-* **`func persistentDomainNames()`**
+* ~~`func persistentDomainNames()`~~
 
 
 ### Maintaining Volatile Domains
@@ -240,7 +240,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 ### Legacy
 > 낡은 기술(더이상 사용하지 않는 기술)
-* **`init?(user: String)`**
+* ~~`init?(user: String)`~~
 * `func synchronize()`
     * 보류중인 기본 데이터베이스로의 비동기 업데이트를 기다리고 반환한다. 이 메서드는 불필요하므로 사용하지 않아야 한다.
 * `class func resetStandardUserDefaults()`
