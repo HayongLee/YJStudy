@@ -62,7 +62,6 @@ iPad에서 카메라의 소스 타입을 지정하면 모달(전체 화면) 또�
 
 > **Important**
 >
->
 > UIImagePickerController 클래스는 세로 모드만 지원한다. 이 클래스는 그대로 사용하도록 설계되어있어 서브 클래스화를 지원하지 않는다. 이 클래스의 뷰 계층 구조는 비공개이며 한 가지 예외를 제외하고는 수정해서는 안된다. 사용자 정의 뷰를 [cameraOverlayView](https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619113-cameraoverlayview?changes=_5) 프로퍼티에 할당하고 해당 뷰를 사용하여 추가 정보를 제공하거나 카메라 인터페이스와 코드 간의 상호 작용을 관리할 수 있다.
 
 
