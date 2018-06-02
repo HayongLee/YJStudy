@@ -227,7 +227,7 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 * `func objectIsForced(forKey: String)`
     * 지정된 키가 관리자가 관리하는지 여부를 나타내는 부울 값을 반환한다.
 * `func objectIsForced(forKey: String, inDomain: String)`
-* 지정된 도메인의 키가 관리자가 관리하는지 여부를 나타내는 부울 값을 반환한다.
+    * 지정된 도메인의 키가 관리자가 관리하는지 여부를 나타내는 부울 값을 반환한다.
 
 
 ### Domains
