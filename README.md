@@ -22,11 +22,15 @@
 * [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
 * [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
+* [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
+* [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+* [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
 * [View Controller Catalog for iOS](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/View%20Controller%20Catalog%20for%20iOS)
 
 
 ### 운영 체제
 * [메모리 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/메모리%20관리)
+* [가상 메모리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/가상%20메모리)
 
 
 
