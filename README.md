@@ -22,6 +22,7 @@
 * [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
 * [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
+* [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
 * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
 * [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
