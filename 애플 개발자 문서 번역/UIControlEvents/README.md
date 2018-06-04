@@ -34,7 +34,7 @@
 * `static var touchDragOutside: UIControlEvents`
     * 컨트롤의 바깥 쪽에서 손가락을 드래그하는 이벤트
 * `static var touchDragEnter: UIControlEvents`
-    * 손가락이 컨트롤이 경계로 드래그되는 이벤트
+    * 손가락이 컨트롤의 경계로 드래그되는 이벤트
 * `static var touchDragExit: UIControlEvents`
     * 컨트롤 내에서 손가락이 경계 밖으로 드래그되는 이벤트
 * `static var touchUpInside: UIControlEvents`
@@ -48,17 +48,17 @@
 * `static var primaryActionTriggered: UIControlEvents`
     * 버튼에 의해 트리거되는 의미론적 액션
 * `static var editingDidBegin: UIControlEvents`
-    * 경계를 입력하여 UITextField 객체에서 편집 세션을 시작하는 터치
+    * 경계에 들어가 UITextField 객체에서 편집 세션을 시작하는 터치
 * `static var editingChanged: UIControlEvnets`
     * UITextField 객체에서 편집 변경을 만드는 터치
 * `static var editingDidEnd: UiControlEvents`
     * 경계를 벗어나 UITextField 객체의 편집 세션을 끝내는 터치
 * `static var editingDidEndOnExit: UiControlEvents`
-    * UITextField 객체에서 편집 세션을 종료하는 터치
+    * UITextField 객체에서 편집 세션을 끝내는 터치
 * `static var allTouchEvents: UIControlEvents`
     * 모든 터치 이벤트
 * `static var allEditingEvents: UIControlEvents`
-    * 모든 편집은 UITextField 객체를 터치한다.
+    * UITextField 객체에 대한 모든 편집 터치
 * `static var applicationReserved: UIControlEvents`
     * 애플리케이션 사용에 이용할 수 있는 일련의 제어 이벤트 값
 * `static var systemReserved: UIControlEvents`
