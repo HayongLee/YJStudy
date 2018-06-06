@@ -80,11 +80,11 @@ Date picker는 사용자가 선택한 날짜를 변경할 때 앱에 알리기 �
 > Date Picker 디버깅
 
 date picker로 문제를 디버깅 할 때 다음과 같은 일반적인 함정을 살펴본다:
-* ~최소 날짜는 최대 날짜보다 이전이어야 한다.~ [minimumDate](https://developer.apple.com/documentation/uikit/uidatepicker/1615980-minimumdate) 및 [maximumDate](https://developer.apple.com/documentation/uikit/uidatepicker/1615999-maximumdate) 프로퍼티의 범위를 확인한다. 최대 날짜가 최소 날짜보다 작은 경우 두 프로퍼티가 모두 무시되고 date picker를 통해 날짜 값을 선택할 수 있다. 최소 및 최대 날짜는 카운트다운-타이머 모드([UIDatePicker.Mode.countDownTimer](https://developer.apple.com/documentation/uikit/uidatepicker/mode/countdowntimer))에서 무시된다.
-* ~분 간격은 60의 약수여야 한다.~ [minuteInterval](https://developer.apple.com/documentation/uikit/uidatepicker/1615998-minuteinterval) 값을 균등하게 60으로 나눌 수 있는지 확인한다. 그렇지 않으면 기본값이 사용된다(1).
+* **최소 날짜는 최대 날짜보다 이전이어야 한다.** [minimumDate](https://developer.apple.com/documentation/uikit/uidatepicker/1615980-minimumdate) 및 [maximumDate](https://developer.apple.com/documentation/uikit/uidatepicker/1615999-maximumdate) 프로퍼티의 범위를 확인한다. 최대 날짜가 최소 날짜보다 작은 경우 두 프로퍼티가 모두 무시되고 date picker를 통해 날짜 값을 선택할 수 있다. 최소 및 최대 날짜는 카운트다운-타이머 모드([UIDatePicker.Mode.countDownTimer](https://developer.apple.com/documentation/uikit/uidatepicker/mode/countdowntimer))에서 무시된다.
+* **분 간격은 60의 약수여야 한다.** [minuteInterval](https://developer.apple.com/documentation/uikit/uidatepicker/1615998-minuteinterval) 값을 균등하게 60으로 나눌 수 있는지 확인한다. 그렇지 않으면 기본값이 사용된다(1).
 
 
-& nbsp;  
+&nbsp;  
 ## Interface Builder Attributes
 > 인터페이스 빌더 속성
 
@@ -109,10 +109,10 @@ Timer | 카운트다운 타이머 모드에서 사용될 때 date picker의 초�
 
 > Note
 >
-> 인터페이스 빌더를 사용하여 Mode 속성을 Count Down Timer로 설정하고 timer 속성 값을 지정하면 프로젝트를 빌드하고 실행할 때 date picker가 Timer 속성 값을 준수하지 않을 수 있다. 이 경우 date picker에  Attributes Inspector로 돌아가서 Date 팝업 메뉴에서 사용자 정의를 선택하고(관련 값을 무시할 수 있음) 프로젝트를 다시 빌드한다.
+> 인터페이스 빌더를 사용하여 Mode 속성을 Count Down Timer로 설정하고 timer 속성 값을 지정하면 프로젝트를 빌드하고 실행할 때 date picker가 Timer 속성 값을 준수하지 않을 수 있다. 이 경우 date picker에  Attributes Inspector로 돌아가서 Date 팝업 메뉴에서 Custom을 선택하고(관련 값을 무시할 수 있음) 프로젝트를 다시 빌드한다.
 
 
-& nbsp;
+&nbsp;
 ## Appearance
 
 UIDatePicker의 appearance는 사용자 정의할 수 없다.
@@ -136,7 +136,7 @@ date picker는 적절한 로케일을 지정하면 자체적으로 국제화를 
 * `var calendar: Calendar!`
     * date picker에 사용할 캘린더
 * `var date: Date`
-    * * date picker에 표시될 날짜
+    * date picker에 표시될 날짜
 * `var locale: Locale?`
     * date picker에서 사용하는 로케일
 * `func setDate(Date, animated: Bool)`
