@@ -3,7 +3,7 @@
 
 
 * [Overview](#overview)
-* [Working With User-Visible Representations of Dates and Times](#working-with-user--visible-representations-of-dates-and-times)
+* [Working With User-Visible Representations of Dates and Times](#working-with-user-visible-representations-of-dates-and-times)
 * [Working With Fixed Format Date Representations](#working-with-fixed-format-date-representations)
 * [Thread Safety](#thread-safety)
 * [Topics](#topics)
