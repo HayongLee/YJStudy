@@ -3,7 +3,22 @@
 
 
 * [Overview](#overview)
+* [Working With User-Visible Representations of Dates and Times](#working-with-user--visible-representations-of-dates-and-times)
+* [Working With Fixed Format Date Representations](#working-with-fixed-format-date-representations)
+* [Thread Safety](#thread-safety)
 * [Topics](#topics)
+    * [Converting Objects](#converting-objects)
+    * [Managing Formats and Styles](#managing-formats-and-styles)
+    * [Managing Attributes](#managing-attributes)
+    * [Managing Behavior Version](#managing-behavior-version)
+    * [Managing Natural Language Support](#managing-natural-language-support)
+    * [Managing AM and PM Symbols](#managing-am-and-pm-symbols)
+    * [Managing Weekday Symbols](#managing-weekday-symbols)
+    * [Managing Month Symbols](#managing-month-symbols)
+    * [Managing Quarter Symbols](#managing-quarter-symbols)
+    * [Managing Era Symbols](#managing-era-symbols)
+    * [Constants](#constants)
+    * [Instance Properties](#instance-properties)
 * [Relationships](#relationships)
 * [See Also](#see-also)
     
@@ -120,7 +135,7 @@ macOS 10.9 및 이후 버전에서 NSDateFormatter는 64 비트 애플리케이�
 * `func setLocalizedDateFormatFromTemplate(String)`
     * 리시버에 지정된 로케일을 사용하여 템플릿의 날짜 형식을 설정한다.
 * `class func dateFormat(fromTemplate: String, options: Int, locale: Locale?) -> String`
-    * 지정된 로케일에 적절하게 배치된, 지정된 날짜 형식 컴포넌트를 나타내는 지역 대응된 날짜 형식 문자열을 리턴한다.
+    * 지정된 로케일에 적절하게 배치된, 지정된 날짜 형식 컴포넌트를 나타내는 지역화된 날짜 형식 문자열을 리턴한다.
 * `var formattingContext: Formatter.Context`
     * 날짜 형식을 지정할 때 사용되는 대문자 형식 지정 컨텍스트이다.
 
