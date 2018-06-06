@@ -2,11 +2,11 @@
 
 
 * [파일 시스템](#파일-시스템)
-* [디렉토리, 논리 디스크](#디렉토리,-논리-디스크)
-* [open()](#open())
-* [파일 보호](#파일-보호)
-* [파일 시스템의 마운트](#파일-시스템의-마운트)
-* [접근 방법](#접근-방법)
+    * [디렉토리, 논리 디스크](#디렉토리,-논리-디스크)
+    * [open()](#open())
+    * [파일 보호](#파일-보호)
+    * [파일 시스템의 마운트](#파일-시스템의-마운트)
+    * [접근 방법](#접근-방법)
 
 
 &nbsp;      
@@ -54,7 +54,7 @@
 파일 디스크립터(file handle, file control block)는 각 프로세스별 오픈 파일 테이블에 대한 위치 정보를 갖고 있다.
 
 
-![open()]()
+![open()](https://github.com/0jun0815/YJStudy/blob/master/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%8C%8C%EC%9D%BC%20%EC%8B%9C%EC%8A%A4%ED%85%9C/images/open().png)
 
 
 ### 파일 보호
@@ -62,7 +62,7 @@
 
 
 #### Access control Matrix
-![acl]()
+![acl](https://github.com/0jun0815/YJStudy/blob/master/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%8C%8C%EC%9D%BC%20%EC%8B%9C%EC%8A%A4%ED%85%9C/images/acl.png)
 
 
 * Access control list: 파일별로 누구에게 어떤 접근 권한이 있는지 표시한다.
@@ -73,7 +73,7 @@
 Access control Matrix는 부가적인 오버헤드가 크다. 일반적인 운영체제에서는 Grouping을 사용한다. Grouping은 전체 사용자를 owner, group, public의 세 그룹으로 나누어 그룹별로 관리한다. 각 파일에 대해 세 그룹의 접근 권한(rwx)을 3비트씩 표시, 즉 9비트만 필요하므로 효율적이다. 예) UNIX
 
 
-![grouping]()
+![grouping](https://github.com/0jun0815/YJStudy/blob/master/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%8C%8C%EC%9D%BC%20%EC%8B%9C%EC%8A%A4%ED%85%9C/images/grouping.png)
 
 
 #### Password
@@ -84,7 +84,7 @@ Access control Matrix는 부가적인 오버헤드가 크다. 일반적인 운�
 마운트란 파일 시스템 구조 내에 있는 일련의 파일들을 사용자나 사용자 그룹들이 이용할 수 있도록 만드는 것이다. UNIX에서는 한 파일 시스템의 루트 디렉토리를 다른 디렉토리에 붙임으로써 디렉토리를 사용할 수 있게 만들어주며, 모든 파일 시스템들을 마치 그들이 속해있는 파일 시스템의 서브 디렉토리인 것처럼 사용 가능하게 만든다.
 
 
-![mount]()
+![mount](https://github.com/0jun0815/YJStudy/blob/master/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%8C%8C%EC%9D%BC%20%EC%8B%9C%EC%8A%A4%ED%85%9C/images/mount.png)
 
 
 ### 접근 방법
