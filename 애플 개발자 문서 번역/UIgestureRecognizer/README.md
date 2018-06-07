@@ -3,8 +3,21 @@
 
 
 * [Overview](#overview)
-* [Subclassing Notes](#Subclassing Notes)
+* [Subclassing Notes](#subclassing-notes)
+    * [Methods to Override](#methods-to-override)
+    * [Special Considerations](#special-considerations)
 * [Topics](#topics)
+    * [Initializing a Gesture Recognizer](#initializing-a-gesture-recognizer)
+    * [Managing Gesture-Related Interactions](#managing-gesture-related-interactions)
+    * [Adding and Removing Targets and Actions](#adding-and-removing-targets-and-actions)
+    * [Getting the Touches and Location of a Gesture](#getting-the-touches-and-location-of-a-gesture)
+    * [Getting the Recognizer's State and View](#getting-the-recognizer's-state-and-view)
+    * [Canceling and Delaying Touches](#canceling-and-delaying-touches)
+    * [Specifying Dependencies Between Gesture Recognizers](#specifying-dependencies-between-gesture-recognizers)
+    * [Recognizing Different Gestures](#recognizing-different-gestures)
+    * [Methods for Subclasses](#methods-for-subclasses)
+    * [Debugging Gesture Recognizers](#debugging-gesture-recognizers)
+    * [Constants](#constants)
 * [Relationships](#relationships)
 * [See Also](#see-also)
     
@@ -27,7 +40,7 @@ UIGestureRecognizer의 구체적인 서브 클래스는 다음과 같다:
 UIGestureRecognizer 클래스는 모든 구체적인 제스처 인식기에 대해 구성 할 수 있는 공통 행동(Behaviors) 집합을 정의한다. 또한 델리게이트([UIGestureRecognizerDelegate](https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate) 프로토콜을 채택한 객체)와 통신 할 수 있으므로 일부 행동을 더욱 세밀하게 사용자 지정할 수 있다.
 
 
-제스처 인식기는 특정 뷰 및 해당 뷰의 모든 서브 뷰들에 대한 테스트를 거친 터치로 작동한다. 따라서 이 뷰와 연관되어야 한다. 해당 연결을 만들려면 [UIView](https://developer.apple.com/documentation/uikit/uiview) 메서드 [addGestureRecognizer(_:)](https://developer.apple.com/documentation/uikit/uiview/1622496-addgesturerecognizer)를 호출해야 한다. 제스처 인식기는 뷰의 응답자 체인(responder chain)에 참여하지 않는다.
+제스처 인식기는 특정 뷰 및 해당 뷰의 모든 서브 뷰들에 히트-테스트된 터치로 작동한다. 따라서 이 뷰와 연관되어야 한다. 해당 연결을 만들려면 [UIView](https://developer.apple.com/documentation/uikit/uiview) 메서드 [addGestureRecognizer(_:)](https://developer.apple.com/documentation/uikit/uiview/1622496-addgesturerecognizer)를 호출해야 한다. 제스처 인식기는 뷰의 응답자 체인(responder chain)에 참여하지 않는다.
 
 
 제스처 인식기에는 이와 관련된 하나 이상의 타겟-액션 쌍이 있다. 타겟-액션 쌍이 여러 개인 경우 누적이 아닌 개별적이다. 제스처를 인식하면 관련된 쌍 각각에 대해 타겟에 액션 메시지가 전달된다. 호출되는 액션 메서드는 다음 시그니처 중 하나를 준수해야 한다.
@@ -37,7 +50,7 @@ UIGestureRecognizer 클래스는 모든 구체적인 제스처 인식기에 대�
 ```
 
 
-후자의 시그니처를 따르는 메서드는 경우에 따라 타겟이 추가 정보를 위해 메시지를 보내는 제스처 인식기를 쿼리 할 수 있다. 예를 들어, 타겟은 이 제스처에 대한 액션 메서드의 마지막 호출 이후 [UIRotationGestureRecognizer](https://developer.apple.com/documentation/uikit/uirotationgesturerecognizer) 객체에 회전 각도(라디안)을 요청할 수 있다. 제스처 인식기의 클라이언트는 [location(in:)](https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624219-location) 또는 [location(ofTouch:in:)](https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624201-location)를 호출하여 제스처의 위치를 요청할 수도 있다. 
+후자의 시그니처를 따르는 메서드는 경우에 따라 타겟이 추가 정보를 위해 메시지를 보내는 제스처 인식기를 쿼리 할 수 있다. 예를 들어, 타겟은 이 제스처에 대한 액션 메서드의 마지막 호출 이후 [UIRotationGestureRecognizer](https://developer.apple.com/documentation/uikit/uirotationgesturerecognizer) 객체에 회전 각도(라디안)를 요청할 수 있다. 제스처 인식기의 클라이언트는 [location(in:)](https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624219-location) 또는 [location(ofTouch:in:)](https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624201-location)를 호출하여 제스처의 위치를 요청할 수도 있다. 
 
 
 제스처 인식기로 해석되는 제스처는 개별 또는 연속 일 수 있다. 더블 탭과 같은 개별 제스처는 멀티 터치 시퀀스에서 한 번 발생하지만 단일 액션이 전송된다. 그러나 제스처 인식기가 회전 제스처와 같은 연속 제스처를 해석하면 멀티 터치 시퀀스가 끝날 때까지 점진적 변경마다 액션 메시지를 보낸다.
@@ -104,7 +117,7 @@ state 프로퍼티는 UIGestureRecognizer.h에서 읽기 전용으로 선언된�
 * `func addTarget(Any, action: Selector)`
     * 제스처 인식기 객체에 타겟과 액션을 추가한다.
 * `func removeTarget(Any?, action: Selector?)`
-    * 제스처 인식기 객체에서 타겟가 액션을 제거한다.
+    * 제스처 인식기 객체에서 타겟과 액션을 제거한다.
     
     
 ### Getting the Touches and Location of a Gesture
