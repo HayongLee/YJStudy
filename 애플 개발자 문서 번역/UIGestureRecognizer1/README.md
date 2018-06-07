@@ -172,7 +172,7 @@ state 프로퍼티는 UIGestureRecognizer.h에서 읽기 전용으로 선언된�
 
 
 ### Methods for Subclasses
-> 서브 클래스를 위한 메서드
+> 서브 클래스를 위한 메서드  
 
 UIGestureRecognizerSubclass.h 헤더 파일에는 UIGestureRecognizer의 서브 클래스에 의해서만 호출되거나 재정의되는 메서드를 선언하는 클래스 익스텐션(확장)이 포함된다. UIGestureRecognizer의 구체적인 서브 클래스만을 사용하는 클라이언트는 이러한 메서드를 절대로 호출할 수 없다.
 
