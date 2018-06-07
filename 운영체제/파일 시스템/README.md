@@ -9,7 +9,7 @@
     * [접근 방법](#접근-방법)
 * [파일 시스템 구현](#파일-시스템-구현)
     * [디스크 파일 할당](#디스크-파일-할당)
-    * [유닉스(UNIX) 파일 시스템의 구조](#유닉스(unix)-파일-시스템의-구조)
+    * [유닉스(UNIX) 파일 시스템의 구조](#유닉스unix-파일-시스템의-구조)
     * [FAT 파일 시스템](#fat-파일-시스템)
     * [디렉토리 구현](#디렉토리-구현)
     * [VFS and NFS](#vfs-and-nfs)
@@ -262,6 +262,9 @@ FAT의 장점은 직접 접근이 가능하고 포인터가 유실되도 FAT에 
 가상 메모리의 페이징 시스템에서 사용하는 페이지 프레임을 캐싱의 관점에서 설명하는 용어. Memory-Mapped I/O를 쓰는 경우 파일의 I/O에서도 page cache를 사용한다.
 
 
+Page cache는 프로세스의 주소 공간을 구성하는 페이지가 스왑 영역에 내려가 있는가 또는 page cache에 올라와 있는가를 가지고 처리한다. 단위는 page(4KB) .
+
+
 #### Memory-Mapped I/O
 파일의 일부를 가상 메모리에 매핑 시킴. 매핑시킨 영역에 대한 메모리 접근 연산은 파일의 입출력을 수행하게 한다.
 
@@ -270,9 +273,19 @@ FAT의 장점은 직접 접근이 가능하고 포인터가 유실되도 FAT에 
 파일 시스템을 통한 I/O 연산은 메모리의 특정 영역인 buffer cache를 사용하며 파일 사용의 locality 활용(한번 읽어온 블록에 대한 후속 요청시 buffer cache에서 즉시 전달)한다. 모든 프로세스가 공용으로 사용하며 Replacement 알고리즘(LRU, LFU 등)이 필요하다.
 
 
-#### Unified Buffer Cache
-최근의 OS에서는 기존의 buffer cache가 page cache에 통합됨
+Buffer cache는 파일 데이터가 파일 시스템 스토리지에 저장되었는가 운영체제 buffer cache에 올라와 있는가를 가지고 처리한다. 단위는 논리적 블록(512byte).
 
+
+#### Unified Buffer Cache
+최근의 OS에서는 기존의 buffer cache가 page cache에 통합되면서 페이지 단위 사용(4KB)한다. 통합 buffer cache는 캐시를 구분하지 않고 그때 그때 필요할 때 할당해서 사용한다.
+
+
+![page-buffer-cache](https://github.com/0jun0815/YJStudy/blob/master/운영체제/파일%20시스템/images/page-buffer-cache.png)
+
+
+* 기존의 파일 I/O에서 파일 입출력 방법은 read()/write()를 사용하는 방법과 memory-mapped를 사용하는 방법이 있다.
+    * read()/write() 입출력은 항상 운영체제에게 요청을 하지만 memory-mapped는 page cache에 올라온 내용은 운영체제에게 요청하지 않는다는 차이점이 있다. memory-mapped는 운영체제에 의해 읽어온 내용을 page cache에 매핑하면 이후 해당 내용에 접근 시 운영체제 간섭없이 파일 입출력 가능하다.
+* 통합된 buffer cache를 이용한 파일의 I/O 방법에서 read()/write()는 동일하지만 memory-mapped는 page cache 자체가 논리적 주소에 매핑된다. 즉 기존의 buffer cache -> page cache 매핑이 단순화 되었다.
 
 
 &nbsp;
