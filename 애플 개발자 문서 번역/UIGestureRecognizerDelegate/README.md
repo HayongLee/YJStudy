@@ -1,5 +1,5 @@
 # UIGestureRecognizerDelegate
-> 제스처 인식기의 델리게이트가 구현한 일련의 메서드로, 앱으 제스처 인식 동작을 미세 조정한다.
+> 제스처 인식기의 델리게이트가 구현한 일련의 메서드로, 앱의 제스처 인식 동작을 미세 조정한다.
 
 
 * [Overview](#overview)
@@ -43,7 +43,7 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequire
 * `func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool`
     * 제스처 인식기가 터치를 나타내는 객체를 받아야 하는 경우 델리게이트에게 요청한다.
 * `func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool`
-    * 제스처 인식기가 프래스를 나타내는 객체를 받아야 하는 경우 델리게이트에게 요청한다.
+    * 제스처 인식기가 프레스를 나타내는 객체를 받아야 하는 경우 델리게이트에게 요청한다.
 
 
 ### Controlling Simultaneous Gesture Recognition
