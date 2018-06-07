@@ -1,4 +1,4 @@
-# UIgestureRecognizer
+# UIGestureRecognizer
 > 구체적인 제스처 인식기의 기본 클래스이다.
 
 
@@ -244,4 +244,4 @@ UIGestureRecognizerSubclass.h 헤더 파일에는 UIGestureRecognizer의 서브 
 &nbsp;      
 &nbsp;      
 ### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
-### [Apple Developer Documentation UIgestureRecognizer](https://developer.apple.com/documentation/uikit/uigesturerecognizer)
+### [Apple Developer Documentation UIGestureRecognizer](https://developer.apple.com/documentation/uikit/uigesturerecognizer)
