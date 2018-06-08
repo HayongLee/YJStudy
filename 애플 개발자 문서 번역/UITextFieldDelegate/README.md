@@ -19,7 +19,7 @@
 4. 텍스트 필드는 편집하는 동안 다양한 델리게이트 메서드를 호출한다:
     * 현재 텍스트가 변경될 때마다 [textField(_:shouldChangeCharactersIn:repacementString:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619599-textfield) 메서드를 호출하고 [textDidChangeNotification](https://developer.apple.com/documentation/uikit/uitextfield/1619640-textdidchangenotification) 알림을 게시한다.
     * 사용자가 내장된 클리어 버튼을 탭하여 텍스트를 지울때 [textFieldShouldClear(_:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear) 메서드를 호출한다.
-    * 사용자가 키보드의 리턴 버튼을 탭할 때 [textFieldShouldReture(_:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn) 메서드를 호출한다.
+    * 사용자가 키보드의 리턴 버튼을 탭할 때 [textFieldShouldReturn(_:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn) 메서드를 호출한다.
 5. 첫 번째 응답자에서 물러나기 전에 텍스트 필드는 해당 대리자의 [textFieldShouldEndEditing(_:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting) 메서드를 호출한다. 이 메서드를 사용하여 현재 텍스트의 유효성을 검사한다.
 6. 텍스트 필드는 첫 번째 응답자에서 물러난다. 이에 따라 시스템은 필요한 경우 키보드를 숨기거나 조정한다. 키보드를 숨기면 시스템은 [keyboardWillHideNotification](https://developer.apple.com/documentation/uikit/uiresponder/1621606-keyboardwillhidenotification) 및 [keyboardDidHideNotification](https://developer.apple.com/documentation/uikit/uiresponder/1621579-keyboarddidhidenotification) 알림을 게시한다.
 7. 텍스트 필드의 델리게이트의 [textFieldDidEndEditing(_:)](https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting) 메서드를 호출하고 [textDidEndEditingNotification](https://developer.apple.com/documentation/uikit/uitextfield/1619633-textdidendeditingnotification) 알림을 게시한다.
@@ -54,7 +54,7 @@
     * 지정된 텍스트를 변경해야 하는 경우 델리게이트에 요청한다.
 * `func textFieldShouldClear(UITextField) -> Bool`
     * 텍스트 필드의 현재 내용을 제거해야 하는 경우 델리게이트에 요청한다.
-* `func textFieldShouldReturn(UiTextField) -> Bool`
+* `func textFieldShouldReturn(UITextField) -> Bool`
     * 텍스트 필드가 리턴 버튼 누르기를 처리해야 하는 경우 델리게이트에 요청한다.
 
 
