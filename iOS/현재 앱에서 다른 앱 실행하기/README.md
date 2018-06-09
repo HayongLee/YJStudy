@@ -23,15 +23,15 @@ URL Scheme는 실행할 다른 앱에 등록된 값을 사용하여야 하며 �
 또는 info.plist를 소스 코드 파일로 열어 아래 구문을 작성한다.
 ```
 <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLName</key>
-            <string></string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>등록할 URLSchemeName</string>
-            </array>
-        </dict>
+<array>
+    <dict>
+        <key>CFBundleURLName</key>
+        <string></string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>등록할 URLSchemeName</string>
+        </array>
+    </dict>
 </array>
 ```
 
