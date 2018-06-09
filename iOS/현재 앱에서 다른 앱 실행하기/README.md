@@ -14,7 +14,7 @@ URL Scheme는 실행할 다른 앱에 등록된 값을 사용하여야 하며 �
 
 
 ### URL Scheme 등록
-실행할 다른 앱의 info.plist에 URL types/Item 0/URL Schemes/item 0 항목에 등록할 URL Scheme 이름을 작성한다. (예: instagram)
+실행할 다른 앱의 info.plist에 URL types/Item 0/URL Schemes/item 0 항목에 등록할 URL Scheme 이름을 작성한다(예: instagram).
 
 
 ![url-schemes](https://github.com/0jun0815/YJStudy/blob/master/iOS/현재%20앱에서%20다른%20앱%20실행하기/Images/url-schemes.png)
@@ -37,7 +37,7 @@ URL Scheme는 실행할 다른 앱에 등록된 값을 사용하여야 하며 �
 
 
 ### URL Scheme 접근
-현재 앱의 info.plist에 
+현재 앱의 info.plist에 LSApplicationQueriesSchemes/item 0/ 항목에 접근할 애플리케이션의 URL Scheme를 작성한다(예: instagram).
 
 
 ![lsapplicationqueriesschemes](https://github.com/0jun0815/YJStudy/blob/master/iOS/현재%20앱에서%20다른%20앱%20실행하기/Images/lsapplicationqueriesschemes.png)
