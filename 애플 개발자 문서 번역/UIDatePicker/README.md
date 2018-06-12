@@ -199,5 +199,5 @@ date picker는 적절한 로케일을 지정하면 자체적으로 국제화를 
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation UIDatePicker](https://developer.apple.com/documentation/uikit/uidatepicker)

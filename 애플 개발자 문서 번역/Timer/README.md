@@ -115,5 +115,5 @@ Timer를 서브클래스화하지 않는다.
 
 &nbsp; 
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation Timer](https://developer.apple.com/documentation/foundation/timer)

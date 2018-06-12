@@ -259,6 +259,6 @@ nbsp;
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
 ### 출처: [부스트코스 iOS 강의](http://www.edwith.org/boostcourse-ios/lecture/17991/)
