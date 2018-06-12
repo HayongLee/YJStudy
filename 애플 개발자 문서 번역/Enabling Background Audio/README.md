@@ -21,5 +21,5 @@ iOS 및 tvOS 앱을 사용하려면 일부 백그라운드 작업에 특정 기�
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation Enabling Background Audio](https://developer.apple.com/documentation/avfoundation/media_assets_playback_and_editing/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio)

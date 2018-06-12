@@ -227,5 +227,5 @@ iOS 4.0 이상에서는 사용자가 플래시 모드(플래시 LED가 있는 �
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation UIImagePickerController](https://developer.apple.com/documentation/uikit/uiimagepickercontroller?changes=_5)
