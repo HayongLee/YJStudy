@@ -88,4 +88,4 @@ UIApplication의 canOpenURL(_:) 메서드를 호출하여 디바이스에 애플
 
 &nbsp;
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>

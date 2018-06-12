@@ -271,5 +271,5 @@ macOS 10.9 및 이후 버전에서 NSDateFormatter는 64 비트 애플리케이�
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation DateFormatter](https://developer.apple.com/documentation/foundation/dateformatter)
