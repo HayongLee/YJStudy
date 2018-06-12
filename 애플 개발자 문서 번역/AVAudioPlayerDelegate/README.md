@@ -37,5 +37,5 @@ AVAudioPlayer 객체의 델리게이트는 AVAudioPlayerDelegate 프로토콜을
 
 &nbsp;
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation AVAudioPlayerDelegate](https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate)
