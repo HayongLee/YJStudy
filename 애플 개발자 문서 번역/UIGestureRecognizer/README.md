@@ -243,5 +243,5 @@ UIGestureRecognizerSubclass.h 헤더 파일에는 UIGestureRecognizer의 서브 
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation UIGestureRecognizer](https://developer.apple.com/documentation/uikit/uigesturerecognizer)
