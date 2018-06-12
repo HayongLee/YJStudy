@@ -8,7 +8,7 @@
 * [입출력 구조](#입출력-구조)
     * [동기식 입출력](#동기식-입출력)
     * [비동기식 입출력](#비동기식-입출력)
-* [DMA(Direct Memory Access)](#dma(direct-memory-access))
+* [DMA(Direct Memory Access)](#dmadirect-memory-access)
 * [저장 장치의 구조](#저장-장치의-구조)
 * [저장 장치의 계층 구조](#저장-장치의-계층-구조)
 * [하드웨어의 보안](#하드웨어의-보안)
