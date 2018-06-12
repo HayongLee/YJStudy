@@ -130,6 +130,6 @@ CPU는 매 시점 명령을 수행하기 전에 현재 모드 비트를 체크�
 
 
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### 출처: [운영 체제와 정보 기술의 원리](http://book.naver.com/bookdb/book_detail.nhn?bid=4392911), [반효경 운영체제 강의](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
 

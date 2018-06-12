@@ -278,5 +278,5 @@ UserDefaults 클래스는 스레드로부터 안전하다.
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults)
