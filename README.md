@@ -2,6 +2,7 @@
 > 공부한 내용들 정리(iOS, 알고리즘, 운영체제, 데이터베이스, 네트워크)
 
 
+&nbsp; 
 ## CS
 ### 알고리즘
 * [스택](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스택)
@@ -24,6 +25,7 @@
 * [디스크 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/디스크%20관리)
 
 
+&nbsp; 
 ## 개발
 ### iOS
 * [현재 앱에서 다른 앱 실행하기](https://github.com/0jun0815/YJStudy/tree/master/iOS/현재%20앱에서%20다른%20앱%20실행하기)
