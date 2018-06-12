@@ -106,6 +106,6 @@
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation View Controller Catalog for iOS](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Introduction.html)
 ### 출처: [부스트코스 iOS 강의](http://www.edwith.org/boostcourse-ios/lecture/17991/)

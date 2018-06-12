@@ -372,5 +372,5 @@ iOS 컨트롤을 접근 가능하게 만드는 방법에 대한 자세한 내용
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation UITextField](https://developer.apple.com/documentation/uikit/uitextfield)

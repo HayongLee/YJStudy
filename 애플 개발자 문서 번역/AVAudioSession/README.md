@@ -285,5 +285,5 @@ iOS 10부터 AVCaptureSession은 라이브 사진 기능을 지원하는 iPhone 
 
 &nbsp;      
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation AVAudioPlayerSession](https://developer.apple.com/documentation/avfoundation/avaudiosession)

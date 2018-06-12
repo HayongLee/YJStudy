@@ -127,5 +127,5 @@ iOS에서 재생할 적절한 오디오 세션을 구성하려면 [AVAudioSessio
 
 &nbsp;
 &nbsp;      
-### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gamil.com>
+### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
 ### [Apple Developer Documentation AVAudioPlayer](https://developer.apple.com/documentation/avfoundation/avaudioplayer)
