@@ -16,6 +16,7 @@
 * [신속 정렬(퀵 정렬)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/신속%20정렬(퀵%20정렬))
 
 
+&nbsp; 
 ### 운영 체제
 * [컴퓨터 시스템의 동작 원리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/컴퓨터%20시스템의%20동작%20원리)
 * [인터럽트의 원리와 프로그램 실행](https://github.com/0jun0815/YJStudy/tree/master/운영체제/인터럽트의%20원리와%20프로그램%20실행)
@@ -34,6 +35,7 @@
 * [현재 앱에서 다른 앱 실행하기](https://github.com/0jun0815/YJStudy/tree/master/iOS/현재%20앱에서%20다른%20앱%20실행하기)
 
 
+&nbsp; 
 ### 애플 개발자 문서 번역
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
 * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
