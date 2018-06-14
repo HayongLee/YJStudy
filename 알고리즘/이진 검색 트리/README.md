@@ -42,7 +42,7 @@ public func insertNodeFromRoot(value: T) {
 private func addNode(value: T) {
     // 재귀적으로 나머지 노드를 순회하면서 새로운 노드를 삽입할 적절한 위치를 찾는다.
     if value < self.value {
-        // value가 루트 키 값보다 작은 경우: 좌측 서브트리에 삽입
+        // value가 루트 키값보다 작은 경우: 좌측 서브트리에 삽입
         // 노드가 존재하는 경우 좌측 서브트리에 삽입하고,
         // 노드가 없는 경우 새로운 노드를 만들어서 좌측 자식 노드로 삽입
         if let leftChild = leftChild {
@@ -53,7 +53,7 @@ private func addNode(value: T) {
             leftChild = newNode
         }
     } else {
-        // value가 루트 키 값보다 큰 경우: 우측 서브트리에 삽입
+        // value가 루트 키값보다 큰 경우: 우측 서브트리에 삽입
         // 노드가 존재하는 경우 우측 서브트리에 삽입하고,
         // 노드가 없는 경우 새로운 노드를 만들어서 우측 자식 노드로 삽입
         if let rightChild = rightChild {
@@ -164,12 +164,12 @@ public class func traversePostOrder(node: BinaryTreeNode?) {
 ```
 // 검색
 public func search(value: T) -> BinaryTreeNode? {
-    // 키 값을 찾은 경우
+    // 키값을 찾은 경우
     if value == self.value {
         return self
     }
 
-    // 해당 키 값이 현재 노드의 키 값보다 작은 경우
+    // 해당 키값이 현재 노드의 키값보다 작은 경우
     // 좌측 서브트리에서 재귀적으로 검색을 시작
     // 그렇지 않은 경우 우측 서브트리에서 검색 시작
     // 값이 없다면 nil을 반환
@@ -293,7 +293,7 @@ private func connectParentTo(child: BinaryTreeNode?) {
 ## 이진 검색 트리 구현
 ```
 public class BinaryTreeNode<T: Comparable> {
-    // 키 값과 자식 노드를 위한 변수
+    // 키값과 자식 노드를 위한 변수
     public var value: T
     public var leftChild: BinaryTreeNode?
     public var rightChild: BinaryTreeNode?
@@ -327,7 +327,7 @@ public class BinaryTreeNode<T: Comparable> {
     private func addNode(value: T) {
         // 재귀적으로 나머지 노드를 순회하면서 새로운 노드를 삽입할 적절한 위치를 찾는다.
         if value < self.value {
-            // value가 루트 키 값보다 작은 경우: 좌측 서브트리에 삽입
+            // value가 루트 키값보다 작은 경우: 좌측 서브트리에 삽입
             // 노드가 존재하는 경우 좌측 서브트리에 삽입하고,
             // 노드가 없는 경우 새로운 노드를 만들어서 좌측 자식 노드로 삽입
             if let leftChild = leftChild {
@@ -338,7 +338,7 @@ public class BinaryTreeNode<T: Comparable> {
                 leftChild = newNode
             }
         } else {
-            // value가 루트 키 값보다 큰 경우: 우측 서브트리에 삽입
+            // value가 루트 키값보다 큰 경우: 우측 서브트리에 삽입
             // 노드가 존재하는 경우 우측 서브트리에 삽입하고,
             // 노드가 없는 경우 새로운 노드를 만들어서 우측 자식 노드로 삽입
             if let rightChild = rightChild {
@@ -396,12 +396,12 @@ public class BinaryTreeNode<T: Comparable> {
 
     // MARK: - 이진 검색 트리 검색
     public func search(value: T) -> BinaryTreeNode? {
-        // 키 값을 찾은 경우
+        // 키값을 찾은 경우
         if value == self.value {
             return self
         }
 
-        // 해당 키 값이 현재 노드의 키 값보다 작은 경우
+        // 해당 키값이 현재 노드의 키값보다 작은 경우
         // 좌측 서브트리에서 재귀적으로 검색을 시작
         // 그렇지 않은 경우 우측 서브트리에서 검색 시작
         // 값이 없다면 nil을 반환
