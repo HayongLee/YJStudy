@@ -49,13 +49,13 @@
 ## 이진 트리 구현
 노드는 다음과 같은 조건을 갖추고 있어야 한다:
 * 키 데이터 값을 포함한 컨테이너
-* 좌, 우측 자식 노드에 대한 두 개의 참조 값
-* 부모 노드에 대한 참조 값
+* 좌, 우측 자식 노드에 대한 두 개의 참조값
+* 부모 노드에 대한 참조값
 
 
 ```
 public class BinaryTreeNode<T: Comparable> {
-    // 키 값과 자식 노드를 위한 변수
+    // 키값과 자식 노드를 위한 변수
     public var value: T
     public var leftChild: BinaryTreeNode?
     public var rightChild: BinaryTreeNode?
