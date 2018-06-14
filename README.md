@@ -14,6 +14,13 @@
 * [삽입 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/삽입%20정렬)
 * [병합 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/병합%20정렬)
 * [신속 정렬(퀵 정렬)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/신속%20정렬(퀵%20정렬))
+#### 트리
+* [트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트리)
+* [이진 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/이진%20트리)
+* [이진 검색 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/이진%20검색%20트리)
+* [B 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/B%20트리)
+* [스플레이 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스플레이%20트리)
+* [레드블랙 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/레드블랙%20트리)
 
 
 &nbsp; 
