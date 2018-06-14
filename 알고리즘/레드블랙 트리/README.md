@@ -26,7 +26,7 @@
 레드블랙 트리 데이터 구조
 
 
-![레드블랙 트리]()
+![레드블랙 트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/레드블랙%20트리.png)
 
 
 레드블랙 트리는 트리 높이가 같은 상황에서 데이터와 관련된 주요 작업인 검색, 삽입, 삭제 등에서 최악의 시나리오를 보장한다. 따라서 최악의 시나리오 상황을 미리 파악해야 하는 실시간 데이터 처리 작업 및 관련 애플리케이션 구현에 자주 활용된다.
@@ -124,7 +124,7 @@ public class RedBlackTreeNode<T: Comparable> {
 ### 우측 회전
 
 
-![우측 회전]()
+![우측 회전](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/우측%20회전.jpg)
 
 
 다음 단계에 따라 우측 회전을 시행한다:
@@ -179,7 +179,7 @@ public func rotateRight() {
 ### 좌측 회전
 
 
-![좌측 회전]()
+![좌측 회전](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/좌측%20회전.jpg)
 
 
 다음 단계에 따라 좌측 회전을 시행한다:
@@ -320,7 +320,7 @@ private func insertionReviewStep2(node: RedBlackTreeNode) {
 3. 세 번째 단계에서, 추가하려는 노드의 부모와 삼촌이 레드인지 확인한다. 레드라면 이들 요소의 컬러를 블랙으로 바꾸고 조부모의 컬러는 레드로 바꾼다. 이렇게 하면 해당 부분은 레드블랙 트리의 규칙에 부합하게 된다. 하지만, (루트 노드일지도 모르는) 조부모 노드를 레드로 바꾸면, 루트는 블랙이어야 한다는 두 번째 규칙을 어기게 된다. 이를 바로잡기 위해 조부모 요소를 있는 그대로 놔둔채, 해당 노드를 삽입하고 첫 번째 단계와 동일한 과정을 거친다.
 
 
-![세 번째 단계]()
+![세 번째 단계](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/세%20번째%20단계.jpg)
 
 
 ```
@@ -345,7 +345,7 @@ private func insertionReviewStep3(node: RedBlackTreeNode) {
 4. 네 번째 단계에 이르면 남은 가능성은 부모는 레드, 삼촌은 블랙일 수 있다는 것이다. 이번에는 조부모 G의 좌측 자식 요소인 부모 P의 우측 자식 노드가 n이 되도록 한다(그 반대의 경우도 동일하다).
 
 
-![네 번째 단계]()
+![네 번째 단계](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/네%20번째%20단계.jpg)
 
 
 * 회전을 한 다음 n과 P의 역할을 바꾼다. n은 P의 부모가 된다. 그래서 다음 단계를 시행하면 n과 P의 라벨이 바뀌게 된다.
@@ -374,14 +374,14 @@ private func insertionReviewStep4(node: RedBlackTreeNode) {
 5. 마지막 단계에 이르면 다음과 같은 모습이 된다.
 
 
-![다섯 번째 단계]()
+![다섯 번째 단계](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/다섯%20번째%20단계.jpg)
 
 
 * 노드 n과 부모 노드 P 모두 레드이고, 이들은 각각 부모 요소의 좌측 자식 요소가 된다(만일 이들 요소가 우측 자식인 경우 반대의 회전 작업을 시행한다).
 * G를 우측으로 회전시키고 P와 G의 컬러를 교환하면 다음과 같은 모습이 된다:
 
 
-![마지막 단계]()
+![마지막 단계](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/레드블랙%20트리/images/마지막%20단계.jpg)
 
 
 ```
