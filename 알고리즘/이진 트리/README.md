@@ -21,28 +21,28 @@
 트리 내의 특정 노드 N이 있을 때, N은 0개 혹은 2개의 자식 노드를 지닌다(1개의 자식 노드를 지니는 경우는 없다).
 
 
-![풀 이진 트리]()
+![풀 이진 트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20트리/images/풀%20이진%20트리.jpg)
 
 
 ### 퍼팩트 이진 트리(Perfect binary tree)
 모든 내부 노드는 두 개의 자식 노드를 지니며, 모든 잎은 동일한 깊이를 지닌다.
 
 
-![퍼팩트 이진 트리]()
+![퍼팩트 이진 트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20트리/images/퍼팩트%20이진%20트리.jpg)
 
 
 ### 컴플리트 이진 트리(Complete binary tree)
 마지막 레벨을 제외한 모든 레벨이 노드로 완전하게 찬 상태다. 마지막 레벨의 노드가 좌측으로 몰려 있다.
 
 
-![컴플리트 이진 트리]()
+![컴플리트 이진 트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20트리/images/컴플리트%20이진%20트리.jpg)
 
 
 ### 균형 이진 트리(Balanced binary tree)
 잎 노드까지 이어지기 위한 최소한의 높이만을 지닌다.
 
 
-![균형 이진 트리]()
+![균형 이진 트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20트리/images/균형%20이진%20트리.jpg)
 
 
 &nbsp;
