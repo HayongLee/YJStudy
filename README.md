@@ -19,6 +19,7 @@
 * [인터럽트의 원리와 프로그램 실행](https://github.com/0jun0815/YJStudy/tree/master/운영체제/인터럽트의%20원리와%20프로그램%20실행)
 * [프로세스](https://github.com/0jun0815/YJStudy/tree/master/운영체제/프로세스)
 * [프로세스 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/프로세스%20관리)
+* [CPU 스케줄링](https://github.com/0jun0815/YJStudy/tree/master/운영체제/CPU%스케줄링)
 * [메모리 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/메모리%20관리)
 * [가상 메모리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/가상%20메모리)
 * [파일 시스템](https://github.com/0jun0815/YJStudy/tree/master/운영체제/파일%20시스템)
