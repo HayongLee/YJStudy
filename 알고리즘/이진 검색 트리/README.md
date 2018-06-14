@@ -196,7 +196,7 @@ public func search(value: T) -> BinaryTreeNode? {
 #### 삭제 시나리오1: 노드 x가 자식 요소를 지니지 않은 경우
 
 
-![삭제 시나리오1]()
+![삭제 시나리오1](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20검색%20트리/images/삭제%20시나리오1.jpg)
 
 
 * 노드 x에 대한 참조값에 nil을 할당해서 부모 노드와 노드 x의 연결을 끊는다.
@@ -205,7 +205,7 @@ public func search(value: T) -> BinaryTreeNode? {
 #### 삭제 시나리오2: 노드 x가 단 하나의 자식 요소만 지닌 경우
 
 
-![삭제 시나리오2]()
+![삭제 시나리오2](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20검색%20트리/images/삭제%20시나리오2.jpg)
 
 
 #### 삭제 시나리오3: 노드 x가 두 개의 자식 요소를 지닌 경우
@@ -214,7 +214,7 @@ public func search(value: T) -> BinaryTreeNode? {
 3. 후손 노드 내에서 재귀적으로 삭제 함수를 호출한다.
 
 
-![삭제 시나리오3]()
+![삭제 시나리오3](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/이진%20검색%20트리/images/삭제%20시나리오3.jpg)
 
 
 #### 삭제 구현
