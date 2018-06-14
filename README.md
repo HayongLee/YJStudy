@@ -12,6 +12,7 @@
 * [연결 리스트(스택 리스트)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/연결%20리스트(스택%20리스트))
 * [삽입 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/삽입%20정렬)
 * [병합 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/병합%20정렬)
+* [신속 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/신속%20정렬(퀵%20정렬))
 
 
 ### 운영 체제
