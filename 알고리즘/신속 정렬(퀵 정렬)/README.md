@@ -34,7 +34,7 @@
 func quickSort<T: Comparable>(_ list: inout [T], lo: Int, hi: Int) {
     // lo 인덱스가 hi 인덱스보다 작은지 확인한다.
     if lo < hi {
-        // partition 함수를 호출해서 현재의 lo와 hi 인덱스값에 따라 배열의 서브시퀀스를 정렬하기 시작한다.
+        // partition 함수를 호출해서 현재의 lo와 hi 인덱스 값에 따라 배열의 서브시퀀스를 정렬하기 시작한다.
         let pivot = partition(&list, lo: lo, hi: hi)
 
         // 좌측 배열 서브시퀀스는 선택된 피봇값에 따라 재귀적으로 정렬된다.
@@ -48,7 +48,7 @@ func partition<T: Comparable>(_ list: inout [T], lo: Int, hi: Int) -> Int {
     // 피봇 선정은 리스트의 맨 마지막 값을 선택하는 나이브(naive) 기법을 사용한다.
     // partition 함수의 목적은 피봇값을 선택하는 것, 배열의 서브시퀀스를 정렬하는 것이다.
 
-    // 배열 리스트에 있는 가장 높은 인덱스값을 선택하고, 이를 나중에 인덱스 값을 비교하는 기준으로 사용한다.
+    // 배열 리스트에 있는 가장 높은 인덱스 값을 선택하고, 이를 나중에 인덱스 값을 비교하는 기준으로 사용한다.
     let pivot = list[hi]
     // lo의 값을 루프에서 피봇 역할을 하는 i 인덱스 값으로 할당한다.
     var i = lo
