@@ -23,7 +23,7 @@
 * [레드블랙 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/레드블랙%20트리)
 * [AVL 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/AVL%20트리)
 * [트라이 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트라이%20트리)
-### 검색
+#### 검색
 * [다양한 서브스트링 검색 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/다양한%20서브스트링%20검색%20알고리즘)
 
 
