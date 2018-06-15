@@ -64,12 +64,12 @@ Synchronization variable:
     initially turn = 0;  => Pi는 (turn == i)일 때, critical section에 들어갈 수 있다. 
 
 Process P0:
-do {
-    while(trun != 0);  // My turn?
-    critical section
-    turn = 1;           // Now it's your turn
-    remainder section
-} while(1)
+    do {
+        while(trun != 0);  // My turn?
+        critical section
+        turn = 1;           // Now it's your turn
+        remainder section
+    } while(1)
 ```
 
 
@@ -102,7 +102,7 @@ Process Pi:
 
 &nbsp;
 ### 알고리즘 3
-알고리즘1, 2의 동기화 변수들(Synchronization variables)을 결합한다. 결합한다.
+알고리즘1, 2의 동기화 변수들(Synchronization variables)을 결합한다. 
 ```
 Process Pi:
     do {
@@ -270,7 +270,7 @@ Consumer(소비자):
 
 
 동기화 문제: 공유 버퍼에 생산자(소비자) 둘이 접근할 때 발생 -> lock을 걸어 해결한다. 
-* 버퍼는 유한하고 가득찬 상황이 되면 생산자는 소비자가 올때 까지 기다린다. 반대로 버퍼가 빈 상황이 되면 소비자도 생산자가 올 때 까지 기다린다.
+* 버퍼는 유한하고 가득찬 상황이 되면 생산자는 소비자가 올 때 까지 기다린다. 반대로 버퍼가 빈 상황이 되면 소비자도 생산자가 올 때 까지 기다린다.
 * 동기화 문제를 해결하기 위해 바이너리 세마포어(상호 배제)와 인테저 세마포어(자원 카운팅)가 필요하다.
 
 
@@ -331,7 +331,7 @@ Consumer:
 
 Shared data:
 * DB 자체
-* readcount;    // 현재 DB에 접근 중인 Reader의 수
+* readcount    // 현재 DB에 접근 중인 Reader의 수
 
 
 Synchronization variables:
