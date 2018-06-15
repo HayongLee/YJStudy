@@ -25,7 +25,7 @@ AVL 트리는 최초의 자체 균형 이진 검색 트리이다.
 * Balance factor = Height(RightSubtree) - Height(LeftSubtree)
 
 
-![AVL트리]()
+![AVL트리](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/AVL%20트리/images/AVL트리.jpg)
 
 
 위 그림에서, AVL 트리의 균형 요소는 모든 노드에 대해 [-1, 1]의 범위에 있고, 잎들은 각각 0의 균형 요소를 가진다.
@@ -104,7 +104,7 @@ AVL 트리 회전은 다음 두 단계에 따라 이뤄진다:
 4. 노드 X의 균형 요소는 +2 이다.
 
 
-![좌측 회전]()
+![좌측 회전](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/AVL%20트리/images/좌측%20회전.jpg)
 
 
 #### 좌측 단순 회전 구현
@@ -159,7 +159,7 @@ public func rotateLeft() -> AVLTreeNode {
 좌측 단순 회전의 반대의 경우 사용된다.
 
 
-![우측 회전]()
+![우측 회전](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/AVL%20트리/images/우측%20회전.jpg)
 
 
 #### 우측 단순 회전 구현
@@ -221,7 +221,7 @@ public func rotateRight() -> AVLTreeNode {
 하지만, 만일 노드 Y의 좌측이 무거운 경우에는 어떻게 해야 할까? 바로 이때 우좌 이중 회전을 시행한다.
 
 
-![우좌 회전]()
+![우좌 회전](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/AVL%20트리/images/우좌%20회전.jpg)
 
 
 * 총 2단계로 회전을 시행하며, 마지막 단계에서 모든 균형 요소는 범위 [-1, 1]의 적정값을 지니게 된다.
