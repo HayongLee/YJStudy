@@ -8,16 +8,16 @@
     * [알고리즘 3](#알고리즘-3)
     * [동기화 하드웨어](#동기화-하드웨어)
 * [세마포어(Semaphore)](#세마포어semaphore)
-    * [Busy-Wait](#busywait)
-    * [Block/Wakeup](#block/wakeup)
+    * [Busy-Wait](#busy-wait)
+    * [Block/Wakeup](#blockwakeup)
     * [세마포어의 두 타입](#세마포어의-두-타입)
     * [데드록 및 기아현상](#데드록-및-기아현상)
-    * [Bounded-Buffer Problem](#boundedbuffer-problem)
-    * [Readers-Writers Problem](#readerswriters-problem)
-    * [Dining-Philosophers Problem](#diningphilosophers-problem)
+    * [Bounded-Buffer Problem](#bounded-buffer-problem)
+    * [Readers-Writers Problem](#readers-writers-problem)
+    * [Dining-Philosophers Problem](#dining-philosophers-problem)
 * [모니터(Monitor)](#모니터monitor)
-    * [Bounded-Buffer Problem](#boundedbuffer-problem)
-    * [Dining-Philosophers Problem](#diningphilosophers-problem)
+    * [Bounded-Buffer Problem](#bounded-buffer-problem-1)
+    * [Dining-Philosophers Problem](#dining-philosophers-problem-1)
 
 
 &nbsp;      
@@ -125,7 +125,7 @@ Process Pi:
 하드웨어적으로 Test & modify를 atomic하게 수행할 수 있도록 지원하는 경우 앞의 문제는 간단히 해결된다.
 
 
-![test&set]()
+![test&set](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/test%26set.png)
 
 
 Test & Set으로 상호 배제:
@@ -196,7 +196,7 @@ block과 wakeup을 다음과 같이 가정한다:
 * wakeup(P): block된 프로세스 P를 wakeup시키고 이 프로세스의 PCB를 ready queue로 옮긴다.
 
 
-![bock&wakeup]()
+![bock&wakeup](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/bock%26wakeup.png)
 
 
 세마포어 연산이 이제 다음과 같이 정의된다:
@@ -241,7 +241,7 @@ Binary semaphore(= mutex)
 * S와 Q가 1로 초기화된 세마포어라 할 때:
 
 
-![deadlock]()
+![deadlock](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/deadlock.png)
 
 
 기아현상(Starvation)
@@ -266,7 +266,7 @@ Consumer(소비자):
 5. Empty 버퍼를 하나 증가시킨다.
 
 
-![bounded-buffer problem]()
+![bounded-buffer problem](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/bounded-buffer%20problem.png)
 
 
 동기화 문제: 공유 버퍼에 생산자(소비자) 둘이 접근할 때 발생 -> lock을 걸어 해결한다. 
@@ -374,7 +374,7 @@ Reader:
 ### Dining-Philosophers Problem
 
 
-![dining-philosophers problem]()
+![dining-philosophers problem](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/dining-philosophers%20problem.png)
 
 ```
 Synchronization variables:
@@ -455,7 +455,7 @@ Philosopher i
 * 한번의 실수가 모든 시스템에 치명적 영향을 끼친다.
 
 
-![세마포어 문제점 예]()
+![세마포어 문제점 예](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/세마포어%20문제점%20예.png)
 
 
 모니터란 동시 수행중인 프로세스 사이에서 abstract data type의 안전한 공유를 보장하기 위한 high-level synchronization construct이다.
@@ -478,7 +478,7 @@ monitor monitor-name {
 ```
 
 
-![monitor]()
+![monitor](https://github.com/0jun0815/YJStudy/blob/master/운영체제/프로세스%20동기화/images/monitor.png)
 
 
 모니터의 특징:
