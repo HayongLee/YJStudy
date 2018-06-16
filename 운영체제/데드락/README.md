@@ -62,7 +62,7 @@ P(B);   P(A);
 ### 자원 할당 그래프(Resource-Allocation Graph)
 
 
-![자원 할당 그래프1]()
+![자원 할당 그래프1](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/자원%20할당%20그래프1.png)
 
 
 * Vertex(정점):
@@ -73,7 +73,7 @@ P(B);   P(A);
     * assignment edge Rj -> Pi (자원을 프로세스에 할당)
     
     
-![자원 할당 그래프2]()
+![자원 할당 그래프2](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/자원%20할당%20그래프2.png)
 
 
 * 그래프에 cycle이 없으면 데드락이 아니다.
@@ -144,7 +144,7 @@ nbsp;
     * Pj-1이 종료되면 Pi의 자원요청을 만족시켜 수행한다.
     
     
-![데드락 회피]()
+![데드락 회피](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/데드락%20회피.png)
 
 
 * 시스템이 safe state에 있으면 => 데드락이 발생하지 않는다.
@@ -170,7 +170,7 @@ Request edge의 assignment dege 변경시 (점선을 포함하여) cycle이 생�
 Cycle 생성 여부 조사시 프로세스의 수가 n일 때 O(n²) 시간이 걸린다.
 
 
-![Resource Allocation Graph Algorithm]()
+![Resource Allocation Graph Algorithm](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/Resource%20Allocation%20Graph%20Algorithm.png)
 
 
 &nbsp;
@@ -190,14 +190,14 @@ Cycle 생성 여부 조사시 프로세스의 수가 n일 때 O(n²) 시간이 �
 
 #### Banker's Algorithm 예제
 
-![Banker's Algorithm1]()
+![Banker's Algorithm1](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/Banker's%20Algorithm1.png)
 
 
 * sequence <P1, P3, P4, P0, P2>가 존재하므로 시스템은 safe state이다.
 * P1이 자원을 요청했을 경우, Need <= Available 인지 확인한다. (1, 2, 2) <= (3, 3, 2) 이므로 true
 
 
-![Banker's Algorithm2]()
+![Banker's Algorithm2](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/Banker's%20Algorithm2.png)
 
 
 * sequence <P1, P3, P4, P0, P2>가 존재하므로 시스템은 safe state이다.
@@ -221,14 +221,14 @@ Wait-for graph는 자원할당 그래프의 변형으로 프로세스만으로 n
 알고리즘은 Wait-for graph에 사이클이 존재하는지를 주기적으로 조사하며 O(n²) 시간이 소요된다.
 
 
-![Wait-for graph]()
+![Wait-for graph](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/Wait-for%20graph.png)
 
 
 * 자원의 최대 사용량을 미리 알릴 필요가 없다. => 그래프에 점선이 없음.
 
 
 #### 자원 유형당 여러 개의 인스턴스인 경우
-![데드락 발견 및 화복1]()
+![데드락 발견 및 화복1](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/데드락%20발견%20및%20화복1.png)
 
 
 * sequence <P0, P2, P3, P4, P1>이 형성되므로 데드락이 없다.
@@ -239,7 +239,7 @@ Wait-for graph는 자원할당 그래프의 변형으로 프로세스만으로 n
 다음과 같이 P2가 C유형의 자원에 추가적인 요청을 할 경우:
 
 
-![데드락 발견 및 화복2]()
+![데드락 발견 및 화복2](https://github.com/0jun0815/YJStudy/blob/master/운영체제/데드락/images/데드락%20발견%20및%20화복2.png)
 
 
 * P0 완료 후 자원 반납이 가능하지만 충분하지는 않다. 따라서 데드락이 존재 한다(P1, P2, P3, P4).
