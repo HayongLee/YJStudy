@@ -1,7 +1,7 @@
 # 깊이 우선 검색
 
 
-* [깊이 우선 검색(DFS, Depth First Search)](#깊이-우선-검색dfs,-depth-first-search)
+* [깊이 우선 검색(DFS, Depth First Search)](#깊이-우선-검색dfs-depth-first-search)
 * [깊이 우선 검색 구현](#깊이-우선-검색-구현)
 
 
@@ -13,8 +13,8 @@
 오직 한 가지 조건에서만 이뤄지는데 노드를 방문할 때는 첫 번째(좌측) 자식을 방문하고, 다음으로 노드 자체를 방문하며, 다음 (우측) 자식을 방문한다.
 
 
-![깊이 우선 검색1]()
-![깊이 우선 검색2]()
+![깊이 우선 검색1](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/깊이%20우선%20검색/images/깊이%20우선%20검색1.jpg)
+![깊이 우선 검색2](https://github.com/0jun0815/YJStudy/blob/master/알고리즘/깊이%20우선%20검색/images/깊이%20우선%20검색2.jpg)
 
 
 * 그래프 노드를 오름 순서로 방문했다. 그래프를 순위에 다라 방문하고 그 결과값을 가져오는 것이 DFS 기법의 활용 목적 중 하나이다.
