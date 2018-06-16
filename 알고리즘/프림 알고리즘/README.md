@@ -34,6 +34,7 @@ MST 계산 절차는 다음과 같다:
 
 &nbsp;
 ## 프림 알고리즘 구현
+#### MSTNode
 ```
 public class MSTNode<T: Equatable & Hashable> {
     // 값, 모서리 참조, 방문 상태 변수
@@ -48,6 +49,9 @@ public class MSTNode<T: Equatable & Hashable> {
     }
 }
 ```
+
+
+#### MSTEdge
 ```
 public class MSTEdge<T: Equatable & Hashable>: Equatable {
     public var from: MSTNode<T>
@@ -81,6 +85,9 @@ extension MSTEdge: Hashable {
     }
 }
 ```
+
+
+#### MSTGraph
 ```
 public class MSTGraph<T: Hashable & Equatable> {
     public var nodes: [MSTNode<T>]
