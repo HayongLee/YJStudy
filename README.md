@@ -2,6 +2,14 @@
 > 공부한 내용들 정리(iOS, 알고리즘, 운영체제, 데이터베이스, 네트워크)
 
 
+* [CS](#cs)
+    * [알고리즘](#알고리즘)
+    * [운영 체제](#운영-체제)
+* [개발](#개발)
+    * [iOS](#ios)
+    * [애플 개발자 문서 번역](#애플-개발자-문서-번역)
+
+
 &nbsp; 
 ## CS
 ### 알고리즘
@@ -25,6 +33,13 @@
 * [트라이 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트라이%20트리)
 #### 검색
 * [다양한 서브스트링 검색 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/다양한%20서브스트링%20검색%20알고리즘)
+#### 그래프
+* [그래프](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/그래프)
+* [깊이 우선 검색](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/깊이%20우선%20검색)
+* [너비 우선 검색](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/너비%20우선%20검색)
+* [스패닝 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스패닝%20트리)
+* [프림 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/프림%20알고리즘)
+* [다익스트라 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/다익스트라%20알고리즘)
 
 
 &nbsp; 
