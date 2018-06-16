@@ -11,7 +11,7 @@
     * [Busy-Wait](#busy-wait)
     * [Block/Wakeup](#blockwakeup)
     * [세마포어의 두 타입](#세마포어의-두-타입)
-    * [데드록 및 기아현상](#데드록-및-기아현상)
+    * [데드락 및 기아현상](#데드락-및-기아현상)
     * [Bounded-Buffer Problem](#bounded-buffer-problem)
     * [Readers-Writers Problem](#readers-writers-problem)
     * [Dining-Philosophers Problem](#dining-philosophers-problem)
@@ -235,8 +235,8 @@ Binary semaphore(= mutex)
 
 
 &nbsp;
-### 데드록 및 기아현상
-데드록(Deadlock)
+### 데드락 및 기아현상
+데드락(Deadlock)
 * 둘 이상의 프로세스가 서로 상대방에 의해 충족될 수 있는 event를 무한히 기다리는 현상
 * S와 Q가 1로 초기화된 세마포어라 할 때:
 
