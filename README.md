@@ -35,6 +35,7 @@
 * [프로세스 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/프로세스%20관리)
 * [CPU 스케줄링](https://github.com/0jun0815/YJStudy/tree/master/운영체제/CPU%20스케줄링)
 * [프로세스 동기화](https://github.com/0jun0815/YJStudy/tree/master/운영체제/프로세스%20동기화)
+* [데드락](https://github.com/0jun0815/YJStudy/tree/master/운영체제/데드락)
 * [메모리 관리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/메모리%20관리)
 * [가상 메모리](https://github.com/0jun0815/YJStudy/tree/master/운영체제/가상%20메모리)
 * [파일 시스템](https://github.com/0jun0815/YJStudy/tree/master/운영체제/파일%20시스템)
