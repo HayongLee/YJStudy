@@ -383,4 +383,4 @@ UITableView는 UIView의 [layoutSubviews()](https://developer.apple.com/document
 &nbsp;      
 &nbsp;      
 ### [by. 0junChoi](https://github.com/0jun0815) email: <0jun0815@gmail.com>
-### [UITableView](https://developer.apple.com/documentation/uikit/uitableview)
+### [Apple Developer Documentation UITableView](https://developer.apple.com/documentation/uikit/uitableview)
