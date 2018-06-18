@@ -69,30 +69,45 @@
 
 &nbsp; 
 ### 애플 개발자 문서 번역
-* [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
-* [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
+#### AVFoundation
+##### Media Assets, Playback, and Editing
+* [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
+##### System Audio Interaction
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
 * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
-* [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
+##### Audio Track Engineering
+* [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
+* [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
+
+#### Foundation
+##### Date and Times
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
-* [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
-* [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
-* [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
+##### Task Management
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
+##### Preferences
+* [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
+
+#### UIKit
+##### Core App
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
+##### Views and Controls
 * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
 * [UIDatePicker](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIDatePicker)
-* [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
-* [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
-* [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
-* [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
 * [UITextField](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextField)
 * [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
-* [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
+##### View Controllers
+* [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
+* [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+##### Touches, Press, and Gestures
+* [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
+* [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
+
+
+#### Other Article
+* [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
+* [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
+* [Naming](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Naming)
 * [View Controller Catalog for iOS](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/View%20Controller%20Catalog%20for%20iOS)
-
-
-
 
 
 
