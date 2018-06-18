@@ -61,7 +61,7 @@ UITableView는 UIView의 [layoutSubviews()](https://developer.apple.com/document
 
 &nbsp;
 ## State Preservation
-테이블 뷰의 [restorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier) 프로퍼티에 값을 할당하면 현재 선택된 행과 첫 번째 표시된 행이 보존된다. 테이블의 데이터 소스는 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 채택할 수 있다. 이 프로토콜은 테이블의 해당 행의 위치와 관계없이 행의 내용을 식별할 수 있는 방법을 제공한다. 테이블의 데이터 소스가 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 채택하면 상태를 저장할 때 데이터 소스가 참조되어 맨 위의 보이는 행과 선택된 셀의 인덱스 경로를 식별자로 변환한다. 복원 중 데이터 소느는 해당 식별자를 다시 인덱스 경로로 변환하고 맨 위의 보이는 행을 다시 설정하고 셀을 다시 선택하는데 사용된다. 테이블의 데이터 소스가 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 구현하지 않으면 스크롤 위치가 저장되고 선택된 셀의 인덱스 경로를 마찬가지로 직접 복원된다.
+테이블 뷰의 [restorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier) 프로퍼티에 값을 할당하면 현재 선택된 행과 첫 번째 표시된 행이 보존된다. 테이블의 데이터 소스는 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 채택할 수 있다. 이 프로토콜은 테이블의 해당 행의 위치와 관계없이 행의 내용을 식별할 수 있는 방법을 제공한다. 테이블의 데이터 소스가 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 채택하면 상태를 저장할 때 데이터 소스가 참조되어 맨 위의 보이는 행과 선택된 셀의 인덱스 경로를 식별자로 변환한다. 복원 중 데이터 소스는 해당 식별자를 다시 인덱스 경로로 변환하고 맨 위의 보이는 행을 다시 설정하고 셀을 다시 선택하는데 사용된다. 테이블의 데이터 소스가 [UIDataSourceModelAssociation](https://developer.apple.com/documentation/uikit/uidatasourcemodelassociation) 프로토콜을 구현하지 않으면 스크롤 위치가 저장되고 선택된 셀의 인덱스 경로를 마찬가지로 직접 복원된다.
 
 
 상태 보존 및 복원의 작동 방식에 대한 자세한 내용은 [App Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072)를 참조.
@@ -298,13 +298,13 @@ UITableView는 UIView의 [layoutSubviews()](https://developer.apple.com/document
 * `func rectForRow(at: IndexPath) -> CGRect`
     * 인덱스 경로에 의해 식별되는 행의 드로잉 영역을 반환한다.
 * `func rectForFooter(inSection: Int) -> CGRect`
-    * 지정된 섹션의 푸터에 대한 드로잉 영영을 반환한다.
+    * 지정된 섹션의 푸터에 대한 드로잉 영역을 반환한다.
 * `func rectForHeader(inSection: Int) -> CGRect`
-    * 지정된 섹션의 헤더에 대한 드로잉 영영을 반환한다.
+    * 지정된 섹션의 헤더에 대한 드로잉 영역을 반환한다.
 
 
 ### Prefetching Data
-> 데이터 프리 페치
+> 데이터 프리페치
 
 테이블 뷰가 값 비싼 데이터 로딩 프로세스에 의존하는 경우 표시하기 전에 데이터를 프리페치하여 사용자 경험을 향상시킬 수 있다. [UITableViewDataSourcePrefetching](https://developer.apple.com/documentation/uikit/uitableviewdatasourceprefetching) 프로토콜을 준수하는 객체를 [prefetchDataSource](https://developer.apple.com/documentation/uikit/uitableview/1771763-prefetchdatasource) 프로퍼티에 할당하여 셀의 데이터를 미리 가져올 때의 알림을 받는다.
 
@@ -320,7 +320,7 @@ UITableView는 UIView의 [layoutSubviews()](https://developer.apple.com/document
 * `var sectionIndexColor: UIColor?`
     * 테이블 뷰의 인덱스 텍스트에 사용할 색상이다.
 * `var sectionIndexBackgroundColor: UIColor?`
-    * 터치되지 않는 동안 테이블 뷰의 섹션 인덱스 배경에 사용할 컬러이다.
+    * 터치되지 않는 동안 테이블 뷰의 섹션 인덱스 백그라운드에 사용할 컬러이다.
 * `var sectionIndexTrackingBackgroundColor: UIColor?`
     * 테이블 뷰의 인덱스 백그라운드 영역에 사용할 컬러이다.
 
