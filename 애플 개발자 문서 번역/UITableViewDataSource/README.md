@@ -17,6 +17,7 @@
 
 
 > **Note**
+>
 > 사용자가 행에서 가로로 스와이프하여 삭제 버튼을 표시하는 테이블 뷰의 스와이프-삭제 기능을 사용하려면 [tableView(_:commit:forRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614871-tableview) 메서드를 구현해야 한다.
 
 
