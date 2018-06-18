@@ -21,7 +21,7 @@
 > 사용자가 행에서 가로로 스와이프하여 삭제 버튼을 표시하는 테이블 뷰의 스와이프-삭제 기능을 사용하려면 [tableView(_:commit:forRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614871-tableview) 메서드를 구현해야 한다.
 
 
-많은 메서드가 [NSIndexPath](https://developer.apple.com/documentation/foundation/nsindexpath) 객체를 매개 변수로 사용한다. UITableView는 NSIndexPath에서 표현된 행 인덱스([row](https://developer.apple.com/documentation/foundation/nsindexpath/1614853-row) 프로퍼티) 및 섹션 인덱스([section](https://developer.apple.com/documentation/foundation/nsindexpath/1528298-section) 프로퍼티)를 가져오고 지정된 행 인덱스 및 섹션 인덱스([init(row:section:) class 메서드](https://developer.apple.com/documentation/foundation/nsindexpath/1614934-init))에서 인덱스 경로를 구성할 수 있는 카테고리를 선언한다. 각 인덱스 경로의 첫 번째 인덱스는 섹션을 식별하고 다음 인덱스는 행을 식별한다. 
+많은 메서드가 [NSIndexPath](https://developer.apple.com/documentation/foundation/nsindexpath) 객체를 매개 변수로 사용한다. UITableView는 NSIndexPath에서 표현된 행 인덱스([row](https://developer.apple.com/documentation/foundation/nsindexpath/1614853-row) 프로퍼티) 및 섹션 인덱스([section](https://developer.apple.com/documentation/foundation/nsindexpath/1528298-section) 프로퍼티)를 가져오고 지정된 행 인덱스 및 섹션 인덱스([init(row:section:) 메서드](https://developer.apple.com/documentation/foundation/nsindexpath/1614934-init))에서 인덱스 경로를 구성할 수 있는 카테고리를 선언한다. 각 인덱스 경로의 첫 번째 인덱스는 섹션을 식별하고 다음 인덱스는 행을 식별한다. 
 
 
 &nbsp;      
