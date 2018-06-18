@@ -73,18 +73,6 @@
 
 &nbsp; 
 ### 애플 개발자 문서 번역
-#### AVFoundation
-> Media Assets, Playback, and Editing
-* [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
-
-> System Audio Interaction
-* [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
-* [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
-
-> Audio Track Engineering
-* [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
-* [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
-
 #### Foundation
 > Date and Times
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
@@ -112,6 +100,18 @@
 > Touches, Press, and Gestures
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
 * [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
+
+#### AVFoundation
+> Media Assets, Playback, and Editing
+* [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
+
+> System Audio Interaction
+* [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
+* [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
+
+> Audio Track Engineering
+* [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
+* [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
 
 #### Other Article
 * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
