@@ -143,7 +143,7 @@ UITableView는 UIView의 [layoutSubviews()](https://developer.apple.com/document
 > 해더 및 푸터 뷰 접근
 
 * `func register(UINib?, forHeaderFooterViewReuseIdentifier: String)`
-    * 헤더 또는 푸터를 포함하는 nil 객체를 지정된 식별자 아래의 테이블 뷰에 등록한다.
+    * 헤더 또는 푸터를 포함하는 nib 객체를 지정된 식별자 아래의 테이블 뷰에 등록한다.
 * `func register(AnyClass?, forHeaderFooterViewReuseIdentifier: String)`
     * 새로운 테이블 헤더 또는 푸터 뷰를 만드는데 사용할 클래스를 등록한다.
 * `func dequeueReusableHeaderFooterView(withIdentifier: String) -> UITableViewHeaderFooterView?`
