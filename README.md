@@ -18,10 +18,12 @@
 * [순환 버퍼](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/순환%20버퍼)
 * [우선순위 큐](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/우선순위%20큐)
 * [연결 리스트(스택 리스트)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/연결%20리스트(스택%20리스트))
+
 #### 정렬
 * [삽입 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/삽입%20정렬)
 * [병합 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/병합%20정렬)
 * [신속 정렬(퀵 정렬)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/신속%20정렬(퀵%20정렬))
+
 #### 트리
 * [트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트리)
 * [이진 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/이진%20트리)
@@ -31,8 +33,10 @@
 * [레드블랙 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/레드블랙%20트리)
 * [AVL 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/AVL%20트리)
 * [트라이 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트라이%20트리)
+
 #### 검색
 * [다양한 서브스트링 검색 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/다양한%20서브스트링%20검색%20알고리즘)
+
 #### 그래프
 * [그래프](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/그래프)
 * [깊이 우선 검색](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/깊이%20우선%20검색)
@@ -72,9 +76,13 @@
 #### AVFoundation
 **Media Assets, Playback, and Editing**
 * [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
+
+
 **System Audio Interaction**
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
 * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
+
+
 **Audio Track Engineering**
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
 * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
@@ -82,26 +90,35 @@
 #### Foundation
 **Date and Times**
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
+
+
 **Task Management**
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
+
+
 **Preferences**
 * [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
 
 #### UIKit
 **Core App**
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
+
+
 **Views and Controls**
 * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
 * [UIDatePicker](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIDatePicker)
 * [UITextField](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextField)
 * [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
+
+
 **View Controllers**
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
 * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+
+
 **Touches, Press, and Gestures**
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
 * [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
-
 
 #### Other Article
 * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
