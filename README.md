@@ -74,11 +74,10 @@
 &nbsp; 
 ### 애플 개발자 문서 번역
 #### AVFoundation
-**Media Assets, Playback, and Editing**
+> Media Assets, Playback, and Editing
 * [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
 
-
-**System Audio Interaction**
+> System Audio Interaction
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
 * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
 
