@@ -36,7 +36,8 @@ func dequeueReusableCell(withIdentifier identifier: String,
 
 
 > **Important**
-> 이 메서드를 호출하기 전에 register(_:forCellResueIdentifier:) 또는 register(_:forCellResueIdentifier:) 메서드를 사용하여 클래스 또는 nib 파일을 등록해야 한다.
+>
+> 이 메서드를 호출하기 전에 register(_:forCellReuseIdentifier:) 또는 register(_:forCellReuseIdentifier:) 메서드를 사용하여 클래스 또는 nib 파일을 등록해야 한다.
 
 
 지정된 식별자에 대한 클래스를 등록하고 새 셀을 만들어야하는 경우 이 메서드는 init(style:reuseIdentifier:) 메서드를 호출하여 셀을 초기화한다. nib 파일에서 셀 객체를 로드한다. 기존 셀을 다시 사용할 수 있는 경우 이 메서드는 대신 셀의 prepareForReuse() 메서드를 호출한다.
