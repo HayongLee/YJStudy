@@ -21,7 +21,7 @@
 
 &nbsp;      
 ## Overview
-UITableViewDelegate 프로토콜의 많은 메서드는 [NSIndexPath](https://developer.apple.com/documentation/foundation/nsindexpath) 객체를 매개 변수 및 반환 값으로 사용한다. UIKit은 NSIndexPath에서 표현된 행 인덱스([row](https://developer.apple.com/documentation/foundation/nsindexpath/1614853-row) 프로퍼티) 및 섹션 인덱스([section](https://developer.apple.com/documentation/foundation/nsindexpath/1528298-section) 프로퍼티)를 가져오고 지정된 행 인덱스와 섹션 인덱스 ([init(row:section:)](https://developer.apple.com/documentation/foundation/nsindexpath/1614934-init) 메서드)에서 인덱스 경로를 구성할 수 있는 카테고리를 선언한다. 행은 섹션 내에 위치하기 때문에 일반적으로 섹션 인덱스 번호를 평가해야 인덱스 번호로 행을 식별할 수 있다.
+UITableViewDelegate 프로토콜의 많은 메서드는 [NSIndexPath](https://developer.apple.com/documentation/foundation/nsindexpath) 객체를 매개 변수 및 반환 값으로 사용한다. UIKit은 NSIndexPath에서 표현된 행 인덱스([row](https://developer.apple.com/documentation/foundation/nsindexpath/1614853-row) 프로퍼티) 및 섹션 인덱스([section](https://developer.apple.com/documentation/foundation/nsindexpath/1528298-section) 프로퍼티)를 가져오고 지정된 행 인덱스와 섹션 인덱스 ([init(row:section:)](https://developer.apple.com/documentation/foundation/nsindexpath/1614934-init) 메서드)에서 인덱스 경로를 구성할 수 있는 카테고리를 선언한다. 행은 섹션 내에 위치하기 때문에 일반적으로 섹션 인덱스 번호를 구해야 인덱스 번호로 행을 식별할 수 있다.
 
 
 &nbsp;      
