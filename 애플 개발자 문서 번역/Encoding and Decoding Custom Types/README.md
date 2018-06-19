@@ -12,7 +12,7 @@
 
 &nbsp;      
 ## Overview
-많은 프로그래밍 작업에는 네트워크 연결을 통해 데이터를 보내거나 디스크에 데이터를 저장하거나 API 및 서비스에 데이터를 제출하는 작업이 포함된다. 이러한 작업에서는 종종 데이터가 전송되는 동안 중간 형멧으로 데이터를 인코딩하고 디코딩해야 한다. 
+많은 프로그래밍 작업에는 네트워크 연결을 통해 데이터를 보내거나 디스크에 데이터를 저장하거나 API 및 서비스에 데이터를 제출하는 작업이 포함된다. 이러한 작업에서는 종종 데이터가 전송되는 동안 중간 형식으로 데이터를 인코딩하고 디코딩해야 한다. 
 
 
 Swift 표준 라이브러리는 데이터 인코딩 및 디코딩에 대한 표준화된 접근 방식을 정의한다. 커스텀 타입에 대해 [Ecodable](https://developer.apple.com/documentation/swift/encodable) 및 [Decodable](https://developer.apple.com/documentation/swift/decodable) 프로토콜을 구현하여 이 접근 방식을 채택한다. 이러한 프로토콜을 채택하면 [Encoder](https://developer.apple.com/documentation/swift/encoder) 및 [Decoder](https://developer.apple.com/documentation/swift/decoder) 프로토콜의 구현에서 데이터를 가져와서 JSON 또는 프로퍼티 리스트와 같은 외부 표현에서 데이터를 인코딩하거나 디코딩할 수 있다. 인코딩 및 디코딩을 모두 지원하려면 Encodable 및 Decodable 프로토콜을 결합한 [Codable](https://developer.apple.com/documentation/swift/codable)에 대한 적합성을 선언한다. 이 과정은 커스텀 타입을 codable하게 만드는 것으로 알려져 있다.
@@ -20,7 +20,7 @@ Swift 표준 라이브러리는 데이터 인코딩 및 디코딩에 대한 표�
 
 &nbsp;
 ## Encode and Decode Automatically
-타입 codable을 만드는 가장 간단한 방법은 이미 Codable 타입을 사용하는 프로퍼티를 선언하는 것이다. 이러한 타입에는 String, Int 및 Double과 같은 표준 라이브러리 타입과 Date, Data, URL과 같은 Foundation 타입이 있다. codable 프로퍼티가 있는 모든 타입은 해당 적합성 선언함으로써 Codable에 자동으로 적합해진다.
+타입 codable을 만드는 가장 간단한 방법은 이미 Codable 타입을 사용하는 프로퍼티를 선언하는 것이다. 이러한 타입에는 String, Int 및 Double과 같은 표준 라이브러리 타입과 Date, Data, URL과 같은 Foundation 타입이 있다. codable 프로퍼티가 있는 모든 타입은 해당 적합성 선언을 함으로써 Codable에 자동으로 적합해진다.
 
 
 랜드 마크의 이름과 창립 연도를 저장하는 Landmark 구조체를 예로 들면:
