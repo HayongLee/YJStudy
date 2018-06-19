@@ -40,7 +40,7 @@
 > UITableViewCell 객체 초기화
 
 * `init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)`
-    * 스타일 및 재사용 식별자로 표 셀을 초기화하고 호출자에게 반환한다.
+    * 스타일 및 재사용 식별자로 테이블 셀을 초기화하고 호출자에게 반환한다.
 * `init?(coder: NSCoder)`
 
 
@@ -54,12 +54,12 @@
 
 
 ### Managing the Predefined Content
-> 사전 정의 된 콘텐츠 관리
+> 미리 정의 된 콘텐츠 관리
 
 * `var textLabel: UILabel?`
     * 테이블 셀의 주요 텍스트 콘텐츠에 사용 된 레이블을 반환한다.
 * `var detailTextLabel: UILabel?`
-    * 테이블 셀이있는 경우 테이블 셀의 보조 레이블을 반환한다.
+    * 테이블 셀의 보조 레이블이 존재한다면 그것을 반환한다.
 * `var imageView: UIImageView?`
     * 테이블 셀의 이미지 뷰를 반환한다.
 
@@ -70,7 +70,7 @@
 * `var contentView: UIView`
     * 셀 객체의 콘텐츠 뷰를 반환한다.
 * `var backgroundView: UIView?`
-    * 뷰는 셀의 백그라운드로 사용된다.
+    * 셀의 백그라운드로 사용되는 뷰.
 * `var selectedBackgroundView: UIView?`
     * 셀을 선택한 경우 셀의 백그라운드로 사용되는 뷰.
 * `var multipleSelectionBackgroundView: UIView?`
@@ -85,7 +85,7 @@
 * `var accessoryView: UIView?`
     * 일반적으로 셀의 오른쪽에서 컨트롤로 사용되는 뷰 이다(일반 상태).
 * `var editingAccessoryType: UITableViewCell.AccessoryType`
-    * 셀의 테이블 뷰의 편집 상태로 사용하는 표준 액세서리 뷰의 타입이다.
+    * 셀이 테이블 뷰의 편집 상태로 사용하는 표준 액세서리 뷰의 타입이다.
 * `var editingAccessoryView: UIView?`
     * 일반적으로 편집 모드에 있을 때 셀 오른쪽의 컨트롤로 사용되는 뷰이다.
 
@@ -98,7 +98,7 @@
 * `var selectionStyle: UITableViewCell.SelectionStyle`
     * 셀 선택 스타일.
 * `func setSelected(Bool, animated: Bool)`
-    * 셀의 선택 상태를 설정한다. 선택적으로 상태 간 전환을 애니메이션으로 표시한다.
+    * 셀의 선택 상태를 설정한다. 선택적으로 상태간 전환을 애니메이션으로 표시한다.
 * `var isHighlighted: Bool`
     * 셀이 강조 표시되는지 여부를 나타내는 부울 값.
 * `func setHighlighted(Bool, animated: Bool)`
