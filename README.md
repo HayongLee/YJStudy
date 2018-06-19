@@ -87,6 +87,9 @@
 > Core App
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
 
+> Resource Management
+* [UIStoryboardSegue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIStoryboardSegue)
+
 > Views and Controls
 * UIControl
     * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
@@ -100,6 +103,8 @@
     * [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
 
 > View Controllers
+* UIViewController
+    * [prepare(for:sender:)](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/prepare(forsender))
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
     * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
 
