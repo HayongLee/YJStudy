@@ -88,18 +88,20 @@
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
 
 > Views and Controls
-* [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
+* UIControl
+    * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
 * [UIDatePicker](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIDatePicker)
 * [UITableView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableView)
+    * [UITableViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDataSource)
+    * [UITableViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDelegate)
     * [dequeueReusableCell(withIdentifier:for:)](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/dequeueReusableCell(withIdentifierfor))
-* [UITableViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDataSource)
-* [UITableViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDelegate)
+* [UITableViewCell](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewCell)
 * [UITextField](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextField)
-* [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
+    * [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
 
 > View Controllers
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
-* [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+    * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
 
 > Touches, Press, and Gestures
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
@@ -111,11 +113,11 @@
 
 > System Audio Interaction
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
-* [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
+    * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
 
 > Audio Track Engineering
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
-* [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
+    * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
 
 #### Other Article
 * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
