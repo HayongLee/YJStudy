@@ -79,6 +79,13 @@ for product in products {
         print("\t\t\(description)")
     }
 }
+
+
+// ----- 출력 -----
+The following products are available:
+    Banana (200 points)
+        A banana grown in Ecuador.
+    Orange (100 points)
 ```
 
 
@@ -103,7 +110,7 @@ Swift 코드에서 사용하는 이름이 동일한 값을 참조하는 JSON의 
 Swift 이름과 JSON 이름 사이의 매핑을 생성하려면, Codable, Encodable 또는 Decodable에 적합성을 추가하는 동일한 타입 내에서 CodingKeys라는 이름의 중첩된 열거형을 사용한다.
 
 
-아래 예제에서, Swift 프로퍼티 이름 points가  인코딩되고 디코딩 될 때 product_name과 어떻게 맵핑되는지 보자.
+아래 예제에서, Swift 프로퍼티 name, points가  인코딩되고 디코딩 될 때 product_name과 어떻게 맵핑되는지 보자.
 ```
 let json = """
 [
@@ -142,6 +149,14 @@ for product in products {
         print("\t\t\(description)")
     }
 }
+
+
+// ----- 출력 -----
+The following products are available:
+    Bananas (200 points)
+        A banana grown in Ecuador.
+    Oranges (100 points)
+        A juicy orange.
 ```
 
 
@@ -252,13 +267,13 @@ let json = """
 ```
 
 
-API에서 반환한 JSON에는 해당 Swift 타입을 채우기 위해 필요한 것보다 많은 정보가 들어 있다. 특히 이전에 정의 된 GroceryStore 구조체와 구조적으로 호환되지 않는다. 해장 제품은 aisles 및 shelves가 안에 중첩되어 있다. JSON의 공급자가 추가 정보를 필요로하지만, 이 정보를 사용하는 모든 앱 내부에서는 유용하지 않을 수 있다.
+API에서 반환한 JSON에는 해당 Swift 타입을 채우기 위해 필요한 것보다 많은 정보가 들어 있다. 특히 이전에 정의 된 품 구조체와 구조적으로 호환되지 않는다. 해장 제품은 aisles 및 shelves가 안에 중첩되어 있다. JSON의 공급자가 추가 정보를 필요로하지만, 이 정보를 사용하는 모든 앱 내부에서는 유용하지 않을 수 있다.
 
 
 외부 컨테이너에서 필요한 데이터를 추출하려면 소스 JSON의 모양을 반영하는 타입을 작성하고 Decodable로 표시한다. 그런 다음 소스 JSON을 미러링하는 타입의 인스턴스를 사용하는 나머지 앱에서 사용할 타입에 이니셜라이저를 작성한다.
 
 
-아래 예제에서 GroceryStoreService 구조체는 grocery JSON과 애플리케이션에서 의도된 용도에 이상적인 GroceryStore 구조체 사이의 중간 역할을 한다:
+아래 예제에서 GroceryStoreService 구조체는 식료품 JSON과 애플리품이션에서 의도된 용도에 이상적인 GroceryStore 구조체 사이의 중간 역할을 한다:
 ```
 struct GroceryStoreService: Decodable {
     let name: String
@@ -280,7 +295,7 @@ struct GroceryStoreService: Decodable {
 GroceryStoreService 구조체는 소스 JSON의 구조(aisles와 shelves 포함)와 일치하므로 Decodable 프로토콜이 구조체의 상속된 타입 목록에 포함되어 있으면 Decodable 프로토콜 적합이 자동으로 수행된다. GroceryStore 구조체의 중첩 된 Product 구조체는 데이터가 동일한 이름과 타입을 사용하기 때문에 Shelf 구조체에서 재사용된다.
 
 
-GroceryStoreService 구조체의 역할을 중간 타입으로 완성하려면, GroceryStore 구조체의 확장을 사용한다. 확장은 GroceryStoreService 인스턴스를 취하는 이니셜라이저를 추가하고 aisles와 shelves를 루핑하고 버리고 불필요한 중첩을 제거한다:
+GroceryStoreService 구조체의 역할을 중간 타입으로 완성하려면, GroceryStore 구조체의 확장을 사용한다. 확장은 GroceryStoreService 인스턴스를 취하는 이니셜라이저를 추가하고 aisles와 shelves를 루핑하여 불필요한 중첩을 제거하고 버린다:
 ```
 extension GroceryStore {
     init(from service: GroceryStoreService) {
@@ -297,8 +312,34 @@ extension GroceryStore {
 ```
 
 
-위의 예제에서 타입 간의 관계를 사용하면 JSON을 쉽고 간결하게 읽고 GroceryStoreService 중간 타입을 전달하고 앱에서 결과로 나오는 GroceryStore 인스턴스를 사용할 수 있다.
+위의 예제에서 타입 간의 관계를 사용하면 JSON을 쉽고 간결하게 읽고 GroceryStoreService 중간 타입을 전달하고 앱에서 결과로 나오는 GroceryStore 인스턴스를 사용할 수 있다:
+```
+let decoder = JSONDecoder()
+let serviceStores = try decoder.decode([GroceryStoreService].self, from: json)
 
+let stores = serviceStores.map { GroceryStore(from: $0) }
+
+for store in stores {
+    print("\(store.name) is selling:")
+    for product in store.products {
+        print("\t\(product.name) (\(product.points) points)")
+        if let description = product.description {
+            print("\t\t\(description)")
+        }
+    }
+}
+
+
+// ----- 출력 -----
+Home Town Market is selling:
+    Banana (200 points)
+        A banana that's perfectly ripe.
+Big City Market is selling:
+    Chestnuts (700 points)
+        Chestnuts that were roasted over an open fire.
+    Pumpkin Seeds (400 points)
+        Seeds harvested from a pumpkin.
+```
 
 
 &nbsp;      
@@ -403,6 +444,20 @@ print("The result of encoding a GroceryStore:")
 let encodedStore = try encoder.encode(store)
 print(String(data: encodedStore, encoding: .utf8)!)
 print()
+
+
+// ----- 출력 -----
+The result of encoding a GroceryStore:
+{
+    "Grapes" : {
+        "points" : 230,
+        "description" : "A mixture of red and green grapes."
+    },
+    "Lemons" : {
+        "points" : 2300,
+        "description" : "An extra sour lemon."
+    }
+}
 ```
 
 
@@ -437,6 +492,13 @@ for product in decodedStore.products {
         print("\t\t\(description)")
     }
 }
+
+
+// ----- 출력 -----
+The store is selling the following products:
+    Orange (100 points)
+    Banana (200 points)
+        A banana grown in Ecuador.
 ```
 
 
