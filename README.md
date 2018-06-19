@@ -80,8 +80,18 @@
 > Task Management
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
 
+> Archives and Serialization
+* [Using JSON with Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Using%20JSON%20with%20Custom%20Types)
+* [JSONEncoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONEncoder)
+* [JSONDecoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONDecoder)
+
 > Preferences
 * [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
+
+#### Swift Standard Library
+> Encoding, Decoding, and Serialization
+* [Encoding and Decoding Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Encoding%20and%20Decoding%20Custom%20Types)
+* [Codable, Encodable, Decodable, CodingKey](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Codable%2C%20Encodable%2C%20Decodable%2C%20CodingKey)
 
 #### UIKit
 > Core App
