@@ -28,7 +28,7 @@ segue 객체를 직접 생성하지 않는다. 대신 스토리보드 런타임�
 
 &nbsp;      
 ## Subclassing Notes
-애플리케이션의 뷰 컨트롤러간에 커스텀 전환을 제공하려는 상황에서 UIStoryboardSegue의 서브 클래스를 만들 수 있다. 커스텀 segue를 사용하려면, 인터페이스 빌더에서 적절한 뷰 컨트롤러 사이에 segue 라인을 생성하고inspector에서 그 타입을 Custom으로 설정한다. inspector에서 사용할 segue의 클래스 이름도 지정해야 한다.
+애플리케이션의 뷰 컨트롤러간에 커스텀 전환을 제공하려는 상황에서 UIStoryboardSegue의 서브 클래스를 만들 수 있다. 커스텀 segue를 사용하려면, 인터페이스 빌더에서 적절한 뷰 컨트롤러 사이에 segue 라인을 생성하고 inspector에서 그 타입을 Custom으로 설정한다. inspector에서 사용할 segue의 클래스 이름도 지정해야 한다.
 
 
 스토리보드 런타임이 커스텀 segue를 감지하면 클래스의 새 인스턴스를 만들고 뷰 컨트롤러 객체로 구성한 후, 뷰 컨트롤러 출발지에 segue를 준비하도록 요청한 다음 segue를 수행한다.
