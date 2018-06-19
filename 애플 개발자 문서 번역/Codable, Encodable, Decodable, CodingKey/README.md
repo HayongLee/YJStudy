@@ -8,11 +8,11 @@
 * [Encodable](#encodable)
     * [Topics](#topics)
 * [Decodable](#decodable)
-    * [Topics](#topics1)
+    * [Topics](#topics-1)
 * [CodingKey](#codingKey)
-    * [Topics](#topics2)
+    * [Topics](#topics-2)
 * [Relationships](#relationships)
-* [See Also](#see-also1)
+* [See Also](#see-also-1)
 
 
 &nbsp;
