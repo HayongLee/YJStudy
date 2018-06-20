@@ -9,7 +9,7 @@
     * [Topics](#topics)
 * [Decodable](#decodable)
     * [Topics](#topics-1)
-* [CodingKey](#codingKey)
+* [CodingKey](#codingkey)
     * [Topics](#topics-2)
 * [Relationships](#relationships)
 * [See Also](#see-also-1)
