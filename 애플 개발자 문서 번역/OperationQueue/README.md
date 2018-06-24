@@ -121,7 +121,7 @@ OperationQueue 클래스는 키-값 코딩(KVC) 및 키-값 관찰(KVO)를 준�
 > 실행 중지
 
 * `var isSuspended: Bool`
-    * 큐가 실행을 위해 연산을 적극적으로 지 여부를 지타내는 부울 값.
+    * 큐가 실행을 위해 연산을 적극적으로 예약하는지 여부를 나타내는 부울 값.
 
 
 ### Configuring the Queue
