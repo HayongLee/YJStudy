@@ -15,7 +15,7 @@
     * [Editing Asset Content](#editing-asset-content)
     * [Observing Changes](#observing-changes)
     * [Working with Asset Resources](#working-with-asset-resources)
-    * [Creating Photo Editing Extensions](#creating-photo-editing-extensions1)
+    * [Creating Photo Editing Extensions](#creating-photo-editing-extensions-1)
     * [Creating Photos Project Extensions](#creating-photos-project-extensions)
 
 
@@ -55,7 +55,7 @@ PhotoKit에는 사용자의 Photos 라이브러리에서 직접 작업할 수 �
 [PHAsset](https://developer.apple.com/documentation/photokit/phasset) 및 [PHAssetChangeRequest](https://developer.apple.com/documentation/photokit/phassetchangerequest) 클래스는 편집을 위해 사진 또는 비디오 콘텐츠를 요청하고 Photos 라이브러리에 편집 콘텐츠를 커밋하는 메서드를 정의한다. 서로 다른 앱과 확장 기능 간의 편집 연속성을 지원하기 위해 Photos는 각 에셋의 현재 및 이전 버전을 마지막 편집을 설명하는 [PHAdjustmentData](https://developer.apple.com/documentation/photokit/phadjustmentdata) 객체와 함께 유지한다. 앱이 이전 편집에서 조정 데이터를 지원하는 경우 사용자가 편집을 되돌리거나 변경하도록 허용 할 수 있다.
 
 
-iOS 및 macOS에서 PhotoKit은 Photos 애플리케이션에서 사용할 수 있도록 사진 편집 확장 프로그램을 개발할 때 상요할 수 있는 클래스를 제공한다. 확장의 주요 클래스는 [PHContentEditingController](https://developer.apple.com/documentation/photokit/phcontenteditingcontroller) 프로토콜을 채택해야 한다. Photos 앱 확장에 대한 자세한 내용은 [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214) 참조.
+iOS 및 macOS에서 PhotoKit은 Photos 애플리케이션에서 사용할 수 있도록 사진 편집 확장 프로그램을 개발할 때 사용할 수 있는 클래스를 제공한다. 확장의 주요 클래스는 [PHContentEditingController](https://developer.apple.com/documentation/photokit/phcontenteditingcontroller) 프로토콜을 채택해야 한다. Photos 앱 확장에 대한 자세한 내용은 [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214) 참조.
 
 
 &nbsp;
@@ -68,10 +68,10 @@ iOS 또는 macOS에서는 [PHContentEditingController](https://developer.apple.c
 
 &nbsp;      
 ## Displaying Live Photos
-[PHLivePhotoView](https://developer.apple.com/documentation/photokit/phlivephotoview) 클래스는 호환되는 하드웨어에서 촬영한 라이브 토 캡쳐 직전과 직후 순간의 모션 및 사운드와 함께 표시하는 방법을 제공한다. 라이브 사진 뷰는 Photos 앱에 있는 것과 동일한 대화형 재생 기능을 제공한다.
+[PHLivePhotoView](https://developer.apple.com/documentation/photokit/phlivephotoview) 클래스는 호환되는 하드웨어에서 촬영한 라이브 포토 캡쳐 직전과 직후 순간의 모션 및 사운드와 함께 표시하는 방법을 제공한다. 라이브 사진 뷰는 Photos 앱에 있는 것과 동일한 대화형 재생 기능을 제공한다.
 
 
-iOS 및 tvOS에서 Photos 프레임 워크의 [PHLivePhoto](https://developer.apple.com/documentation/photokit/phlivephoto) 클래스로 라이브 사진 뷰에 표시하기 위해 라이브 사진 객체를 가져올 수 있다. macOS에서 [PHLivePhoto](https://developer.apple.com/documentation/photokit/phlivephoto) 클래스는 Photos 앱의 사진 편집 확장 프로그램에서 편집중인 라이브 사진에대한 접근을 제공한다.
+iOS 및 tvOS에서 Photos 프레임 워크의 [PHLivePhoto](https://developer.apple.com/documentation/photokit/phlivephoto) 클래스로 라이브 사진 뷰에 표시하기 위해 라이브 사진 객체를 가져올 수 있다. macOS에서 [PHLivePhoto](https://developer.apple.com/documentation/photokit/phlivephoto) 클래스는 Photos 앱의 사진 편집 확장 프로그램에서 편집중인 라이브 사진에 대한 접근을 제공한다.
 
 
 웹에 라이브 사진 콘텐츠를 표시하려면 [LivePhotosKit JS](https://developer.apple.com/documentation/livephotoskitjs) 프레임 워크를 사용한다.
@@ -96,7 +96,7 @@ iOS 및 tvOS에서 Photos 프레임 워크의 [PHLivePhoto](https://developer.ap
 * `class PHAssetCollection`
     * 순간, 사용자가 만든 앨범 또는 스마트 앨범과 같은 Photos 에셋 그룹의 표현이다.
 * `class PHCollection`
-    * Photos 에셋 컬렉션 및 컬렉션 목록의 추상 슈퍼클래스이다.
+    * Photos 에셋 컬렉션 및 컬렉션 목록의 추상 슈퍼 클래스이다.
 * `class PHCollectionList`
     * 순간 연도 또는 사용자가 만든 앨범의 폴더와 같은 Photos 에셋 컬렉션이 포함된 그룹의 표현이다.
 * `class PHObject`
@@ -104,7 +104,7 @@ iOS 및 tvOS에서 Photos 프레임 워크의 [PHLivePhoto](https://developer.ap
 * `class PHFetchResult`
     * Photos fetch 메서드에서 반환된 에셋 또는 컬렉션의 정렬된 목록이다.
 * `class PHFetchOptions`
-    * 에셋 또는 컬렉션 객체를 가져올 때 Photos에서 반환하는 결과의 필터링, 정렬 및 관리에 영향을주는 옵션의 세트.
+    * 에셋 또는 컬렉션 객체를 가져올 때 Photos에서 반환하는 결과의 필터링, 정렬 및 관리에 영향을 주는 옵션의 세트.
 
 
 ### Loading Asset Content
@@ -116,9 +116,9 @@ iOS 및 tvOS에서 Photos 프레임 워크의 [PHLivePhoto](https://developer.ap
 * `class PHCachingImageManager`
     * 대량의 에셋을 일괄적으로 미리 로딩하기 위해 최적화된 Photos 에셋과 관련된 미리보기 및 전체 크기 이미지 또는 비디오 데이터를 검색하거나 생성하는 메서드를 제공한다.
 * `class PHImageRequestOptions`
-    * 이미지 관리자가 요청한 Photos 에셋의 스틸 이미지 표현 제공에 영향을주는 옵션 세트이다.
+    * 이미지 관리자가 요청한 Photos 에셋의 스틸 이미지 표현 제공에 영향을 주는 옵션 세트이다.
 * `class PHVideoRequestOptions`
-    * 이미지 관리자에서 요청한 동영상 에셋 데이터의 제공에 영향을주는 옵션 세트이다.
+    * 이미지 관리자에서 요청한 동영상 에셋 데이터의 제공에 영향을 주는 옵션 세트이다.
 * `class PHLivePhotoRequestOptions`
     * 이미지 관리자가 요청한 라이브 사진 에셋의 제공에 영향을 주는 옵션 세트이다.
 * `class PHLivePhoto`
@@ -185,13 +185,13 @@ Photos 앱의 다른 앱, 다른 기기 또는 코드가 컬렉션의 에셋 목
 * `class PHAssetResource`
     * Photos 라이브러리의 사진, 비디오 또는 라이브 사진 에셋과 관련된 기본 데이터 자원이다.
 * `class PHAssetCreationRequest`
-    * Photos 라이브러리 변경 블록에서 사용하기 위해 
+    * Photos 라이브러리 변경 블록에서 사용하기 위해 기본 데이터 리소스에서 새 Photos 에셋을 생성하라는 요청이다.
 * `class PHAssetResourceCreationOptions`
-    * 기본 자원에서 새 Photos 에셋을 만드는데 영향을주는 옵션의 세트이다.
+    * 기본 자원에서 새 Photos 에셋을 만드는데 영향을 주는 옵션의 세트이다.
 * `class PHAssetResourceManager`
     * Photos 에셋과 관련된 자원에 대한 기본 데이터 저장소에 접근하는 메서드를 제공한다.
 * `class PHAssetResourceRequestOptions`
-    * 에셋 자원 관리자 요청한 기본 에셋 데이터 전달에 영향을주는 옵션의 세트이다.
+    * 에셋 자원 관리자 요청한 기본 에셋 데이터 전달에 영향을 주는 옵션의 세트이다.
 
 
 ### Creating Photo Editing Extensions
