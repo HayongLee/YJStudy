@@ -13,6 +13,8 @@
     * [Managing the Execution of Operations](#managing-the-execution-of-operations)
     * [Suspending Execution](#suspending-execution)
     * [Configuring the Queue](#configuring-the-queue)
+* [Relationships](#relationships)
+* [See Also](#see-also)
 
 
 &nbsp;    
@@ -131,6 +133,23 @@ OperationQueue 클래스는 키-값 코딩(KVC) 및 키-값 관찰(KVO)를 준�
     * 연산 큐의 이름.
 * `var underlyingQueue: DispatchQueue?`
     * 연산을 실행하는데 사용되는 디스패치 큐.
+
+
+&nbsp;
+## Relationships
+### Inherits From
+* NSObject
+
+
+### Conforms To
+* CVarArg, Equatable, Hashable
+
+
+&nbsp;      
+## See Also
+### Operations
+* class Operation
+* class BlockOperation
 
 
 &nbsp;      
