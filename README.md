@@ -3,6 +3,7 @@
 
 
 * [CS](#cs)
+* [데이터베이스](#데이터베이스)
     * [알고리즘](#알고리즘)
     * [운영 체제](#운영-체제)
 * [개발](#개발)
@@ -12,6 +13,9 @@
 
 &nbsp; 
 ## CS
+### 데이터베이스
+* [데이터베이스란 - 용도와 역할](https://github.com/0jun0815/YJStudy/tree/master/데이터베이스/데이터베이스란%20-%20용도와%20역할)
+
 ### 알고리즘
 * [스택](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스택)
 * [큐](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/큐)
