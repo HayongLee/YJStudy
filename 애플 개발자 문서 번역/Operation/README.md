@@ -25,7 +25,7 @@
 
 &nbsp;    
 ## Overview
-Operation 클래스는 추상 클래스이기 때문에 직접 사용하지 않고 대신 실제 작업을 수행하기 위해 시스템 정의 서브 클래스([NSInvocationOperation](https://developer.apple.com/documentation/foundation/nsinvocationoperation) 또는 [BlockOperation](https://developer.apple.com/documentation/foundation/blockoperation)) 중 하나를 서브 클래스로 사용한다. 추상적임에도 불구하고 Operation의 기본 구현에는 작업의 안전한 실행을 조정하는 중요한 로직이 포함된다. 이 내장 로직을 사용하면 다른 시스템 객체와 올바르게 작동하는지 확인하는데 필요한 글루 코드 대신 실제 작업 구현에 집중할 수 있다. 
+Operation 클래스는 추상 클래스이기 때문에 직접 사용하지 않고 대신 실제 작업을 수행하기 위해 시스템 정의 서브 클래스([NSInvocationOperation](https://developer.apple.com/documentation/foundation/nsinvocationoperation) 또는 [BlockOperation](https://developer.apple.com/documentation/foundation/blockoperation)) 중 하나를 서브 클래스로 사용한다. 추상임에도 불구하고 Operation의 기본 구현에는 작업의 안전한 실행을 조정하는 중요한 로직이 포함된다. 이 내장 로직을 사용하면 다른 시스템 객체와 올바르게 작동하는지 확인하는데 필요한 글루 코드 대신 실제 작업 구현에 집중할 수 있다. 
 
 
 연산(Operation) 객체는 단일 샷 객체이다. 즉, 연산을 한 번 실행하고 다시 실행할 수는 없다. 일반적으로 연산을 연산 큐([OperationQueue](https://developer.apple.com/documentation/foundation/operationqueue) 클래스의 인스턴스)에 추가하여 연산을 실행한다. 연산 큐는 직접적으로 보조 스레드에서 실행하여 연산을 실행하거나 간접적으로 libdispatch 라이브러리(Grand Central Dispatch 라고도 함)을 사용하여 연산을 실행한다. 큐가 연산을 실행하는 방법에 대한 자세한 내용은 [OperationQueue](https://developer.apple.com/documentation/foundation/operationqueue)를 참조한다.
@@ -44,7 +44,7 @@ NSOperation이 지원하는 종속성은 종속 연산이 성공적으로 완료
 
 &nbsp;      
 ## KVO-Compliant Properties
-NSOperation 클래스는 여러 프로퍼티에 대해 키-값 코딩(KVC) 및 키-값 관찰(KVO)를 준수한다. 필요에 따라 이러한 프로퍼티를 관찰하여 애플리케이션의 다른 부분을 제어할 수 있다. 프로퍼티를 관찰하려면 다음 키 경로를 사용한다:
+NSOperation 클래스는 여러 프로퍼티에 대해 키-값 코딩(KVC) 및 키-값 관찰(KVO)을 준수한다. 필요에 따라 이러한 프로퍼티를 관찰하여 애플리케이션의 다른 부분을 제어할 수 있다. 프로퍼티를 관찰하려면 다음 키 경로를 사용한다:
 * isCancelled - 읽기 전용
 * isAsynchronous - 읽기 전용
 * isExecuting - 읽기 전용
@@ -121,12 +121,12 @@ NSOperation 클래스는 연산의 실행 상태를 추적하는 기본 논리�
 > start() 메서드에서 즉시 super를 호출해야 한다. 동시 연산을 정의할 때 작업을 시작하고 적절한 KVO 알림을 생성하는 것과 같은 기본 start() 메서드가 제공하는 것과 동일한 동작을 제공하기 위해 직접 작업을 수행한다. start() 메서드는 작업을 실제로 시작하기 전에 연산 자체가 취소되었는지 확인해야 한다.  취소 의미에 대한 자세한 내용은 [Responding to the Cancel Command](https://developer.apple.com/documentation/foundation/operation#1661262) 참조.
 
 
-동시 연산의 경우에도 위에 설명된 것 이외의 메서드를 재정의해야 할 필요는 거의 없다. 그러나 연산의 종속성 기능을 커스텀화하는 경우 추가 메서드를 재정의하고 추가 KVO 알림을 제공해야 할 수 있다. 종속성의 경우 isReady 키 경로에 대한 알리만 제공하면 된다. 종속성 프로퍼티에는 종속 연산 목록이 포함되어 있으므로 변경 내용은 기본 NSOperation 클래스에서 이미 처리된다.  
+동시 연산의 경우에도 위에 설명된 것 이외의 메서드를 재정의해야 할 필요는 거의 없다. 그러나 연산의 종속성 기능을 커스텀화하는 경우 추가 메서드를 재정의하고 추가 KVO 알림을 제공해야 할 수 있다. 종속성의 경우 isReady 키 경로에 대한 알림만 제공하면 된다. 종속성 프로퍼티에는 종속 연산 목록이 포함되어 있으므로 변경 내용은 기본 NSOperation 클래스에서 이미 처리된다.  
 
 
 &nbsp;      
 ### Maintaining Operation Object States
-연산 객체에는 내부적으로 상태 정보를 유지 관리하여 실행 안전 여부를 결정하고 외부 클라이언트에게 연산의 생명주기를 통해 진행 상황을 알린다. 커스텀 서브 클래스는 이 상태 정보를 유지 ㅂ수하여 코드에서 연산의 올바른 실행을 보장한다. 연산의 상태와 관련된 키 경로는 다음고 같다:
+연산 객체에는 내부적으로 상태 정보를 유지 관리하여 실행 안전 여부를 결정하고 외부 클라이언트에게 연산의 생명주기를 통해 진행 상황을 알린다. 커스텀 서브 클래스는 이 상태 정보를 유지 보수하여 코드에서 연산의 올바른 실행을 보장한다. 연산의 상태와 관련된 키 경로는 다음과 같다:
 * isReady
     * isReady 키 경로를 통해 클라이언트는 연산이 언제 실행할 준비가 되었는지 알 수 있다. [isReady](https://developer.apple.com/documentation/foundation/operation/1412992-isready) 프로퍼티에는 연산을 지금 실행할 준비가 되었을 때 true 값이 포함되며, 종속이 아직 완료되지 않은 연산이 있으면 false 값을 포함한다.
     * 대부분의 경우 이 키 경로의 상태를 직접 관리할 필요가 없다. 그러나 연산의 준비 상태가 종속 연산 이외의 요인(예: 프로그램의 일부 외부 조건)에 의해 결정되는 경우 [isReady](https://developer.apple.com/documentation/foundation/operation/1412992-isready) 프로퍼티를 직접 구현하고 작업 상태를 직접 추적할 수 있다. 외부 상태가 허용하는 경우에만 연산 객체를 작성하는 것이 더 간단하다.
@@ -138,7 +138,7 @@ NSOperation 클래스는 연산의 실행 상태를 추적하는 기본 논리�
     * isFinished 키 경로를 통해 클라이언트는 연산이 작업을 성공적으로 완료했거나 취소되고 종료되었음을 알 수 있다. 연산 객체는 isFinished 키 경로의 값이 true로 변경될 때까지 종속성을 지우지 않는다. 마찬가지로 [isFinished](https://developer.apple.com/documentation/foundation/operation/1413540-isfinished) 프로퍼티에 true가 포함될 때까지 연산 큐는 연산을 큐에서 제외하지 않는다. 따라서 완료된 연산을 마킹하면 진행중인 연산이나 취소된 연산으로 인해 큐가 백업되지 않도록 유지하는 것이 중요하다.
     * [start()](https://developer.apple.com/documentation/foundation/operation/1416837-start) 메서드 또는 연산 객체를 바꿀 경우 [isFinished](https://developer.apple.com/documentation/foundation/operation/1413540-isfinished) 프로퍼티를 바꾸고 연산 실행이 완료되거나 취소 될 때 KVO 알림을 생성해야 한다.
 * isCancelled
-    * isCancelled 키 경로를 통해 클라이언트는 연산 취소가 요청되었음을 알 수 있다. 취소 지원은 자발적이지만 권장되며 사용자 코드가 이 키 경로에 대해 KVO 알림을 보냊 ㅣ않아도 된다. 연산의 취소 알림 처리에 대한 자세한 내용은 [Responding to the Cancel Command](https://developer.apple.com/documentation/foundation/operation#1661262) 참조.
+    * isCancelled 키 경로를 통해 클라이언트는 연산 취소가 요청되었음을 알 수 있다. 취소 지원은 자발적이지만 권장되며 사용자 코드가 이 키 경로에 대해 KVO 알림을 보내지 않아도 된다. 연산의 취소 알림 처리에 대한 자세한 내용은 [Responding to the Cancel Command](https://developer.apple.com/documentation/foundation/operation#1661262) 참조.
 
 
 &nbsp;      
@@ -229,7 +229,7 @@ NSOperation 클래스는 연산의 실행 상태를 추적하는 기본 논리�
 * `enum Operation.QueuePriority`
     * 이 상수를 사용하면 연산이 실행되는 순서의 우선 순위를 지정할 수 있다.
 * `enum QualityOfService`
-    * 시스템에 대한 연산의 성격과 중요성을 나타내는 데 사용된다. 높은 품질의 서비스 클래스로 작업하면 자원 경합이 있을 때마자 낮은 서비스 크래스로 작업하는 것보다 많은 자원이 수신된다.
+    * 시스템에 대한 연산의 성격과 중요성을 나타내는 데 사용된다. 높은 품질의 서비스 클래스로 작업하면 자원 경합이 있을 때마다 낮은 서비스 크래스로 작업하는 것보다 많은 자원이 수신된다.
 
 
 &nbsp;      
