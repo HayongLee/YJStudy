@@ -32,7 +32,7 @@ UIScrollView 객체 (또는 간단히 스크롤 뷰)의 중심 개념은 콘텐�
 스크롤 뷰에서 표시된 콘텐츠의 드로잉을 관리하는 객체는 뷰가 화면의 크기를 초과하지 않도록 콘텐츠의 서브 뷰를 타일식으로 배열해야 한다. 스크롤 뷰에서 스크롤 할 때 이 객체는 필요에 따라 서브 뷰를 추가하고 제거해야 한다.
 
 
-스크롤 뷰에는 스크롤 바가 없기 때문에 터치에서 스크롤 할 의도와 콘텐츠의 서브 뷰를 추적할 의도가 있는지 여부를 알 수 있어야 한다. 이 결정을 내리기 위해 타이머를 시작하여 터치 다운 이벤트를 일시적으로 가로채고 타이머가 작동하기 전에 접촉하는 소가락이 움직이는 지 확인한다. 위치가 크게 변경되지 않고 타이머가 발생하면 스크롤 뷰는 추적 이벤트를 콘텐츠 뷰의 수정된 서브 뷰로 보낸다. 그런 다음 사용자가 타이머가 경과하기 전에 손가락을 충분히 드래그하면 스크롤 뷰는 서브 뷰에서 추적을 취소하고 스크롤을 수행한다. 서브 클래스는 스크롤 뷰에서 스크롤 제스처를 처리하는 방법에 영향을 주도록 [touchesShouldBegin(_:with:in:)](https://developer.apple.com/documentation/uikit/uiscrollview/1619418-touchesshouldbegin), [isPagingEnabled](https://developer.apple.com/documentation/uikit/uiscrollview/1619432-ispagingenabled) 및 [touchesShouldCancel(in:)](https://developer.apple.com/documentation/uikit/uiscrollview/1619387-touchesshouldcancel) 메서드(스크롤 뷰에서 호출함)을 재정의할 수 있다. 
+스크롤 뷰에는 스크롤 바가 없기 때문에 터치에서 스크롤 할 의도와 콘텐츠의 서브 뷰를 추적할 의도가 있는지 여부를 알 수 있어야 한다. 이 결정을 내리기 위해 타이머를 시작하여 터치 다운 이벤트를 일시적으로 가로채고 타이머가 작동하기 전에 접촉하는 손가락이 움직이는지 확인한다. 위치가 크게 변경되지 않고 타이머가 발생하면 스크롤 뷰는 추적 이벤트를 콘텐츠 뷰의 수정된 서브 뷰로 보낸다. 그런 다음 사용자가 타이머가 경과하기 전에 손가락을 충분히 드래그하면 스크롤 뷰는 서브 뷰에서 추적을 취소하고 스크롤을 수행한다. 서브 클래스는 스크롤 뷰에서 스크롤 제스처를 처리하는 방법에 영향을 주도록 [touchesShouldBegin(_:with:in:)](https://developer.apple.com/documentation/uikit/uiscrollview/1619418-touchesshouldbegin), [isPagingEnabled](https://developer.apple.com/documentation/uikit/uiscrollview/1619432-ispagingenabled) 및 [touchesShouldCancel(in:)](https://developer.apple.com/documentation/uikit/uiscrollview/1619387-touchesshouldcancel) 메서드(스크롤 뷰에서 호출함)을 재정의할 수 있다. 
 
 
 또한 스크롤 뷰는 콘텐츠의 확대, 축소 및 패닝을 처리한다. 사용자가 핀치 인 또는 핀치 아웃 제스처를 하면 스크롤 뷰는 콘텐츠의 오프셋 및 크기를 조정한다. 제스처가 끝나면 콘텐츠 뷰를 관리하는 객체는 필요에 따라 콘텐츠의 서브 뷰를 업데이트해야 한다. 제스처가 끝나고 손가락이 여전히 아래쪽에 있을 수 있다. 제스처가 진행되는 동안 스크롤 뷰는 서브 뷰에 추적 호출을 보내지 않는다.
@@ -142,7 +142,7 @@ UIScrollView 클래스에는 [UIScrollViewDelegate](https://developer.apple.com/
 * `func flashScrollIndicators()`
     * 스크롤 인디케이터를 잠시 표시한다.
 * `var refreshControl: UIRefreshControl?`
-    * 스크롤 뷰와 연고나된 새로 고침 컨트롤이다.
+    * 스크롤 뷰와 연관된 새로 고침 컨트롤이다.
     
 
 ### Scrolling to a Specific Location
