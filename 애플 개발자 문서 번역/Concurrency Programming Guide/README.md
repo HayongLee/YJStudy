@@ -24,7 +24,7 @@
 
 
 #### Dispatch Queues
-디스패치 큐는 커스텀 작업을 실행하기 위한 C 기반 메커니즘이다. 디스패치 큐는 작업을 순차적으로 또는 동시해 수행하지만 항상 선입선출로 수행한다. 즉, 디스패치 큐는 항상 큐에 추가된 것과 동일한 순서로 큐에서 제거(디큐) 작업을 시작한다. 직렬(serial) 디스패치 큐는 한 번에 하나의 작업만 실행하고 해당 작업이 큐에서 나가기 전에 완료될 때까지 대기하고 새 큐를 시작한다. 반대로 동시(concurrency) 디스패치 큐는 이미 시작된 작업이 완료될 때까지 기다리지 않고 가능한 많은 작업을 시작한다.
+디스패치 큐는 커스텀 작업을 실행하기 위한 C 기반 메커니즘이다. 디스패치 큐는 작업을 순차적으로 또는 동시에 수행하지만 항상 선입선출로 수행한다. 즉, 디스패치 큐는 항상 큐에 추가된 것과 동일한 순서로 큐에서 제거(디큐) 작업을 시작한다. 직렬(serial) 디스패치 큐는 한 번에 하나의 작업만 실행하고 해당 작업이 완료되어 큐에서 나가기 전까지 대기하다가 새 작업을 시작한다. 반대로 동시(concurrency) 디스패치 큐는 이미 시작된 작업이 완료될 때까지 기다리지 않고 가능한 많은 작업을 시작한다.
 
 
 디스패치 큐의 장점:
@@ -41,7 +41,7 @@
 디스패치 큐에 제출하는 작업은 함수 또는 블록 객체 내에 캡슐화되어야 한다. 블록 객체는 함수 포인터와 비슷한 OS X v10.6 및 iOS 4.0에 도입 된 C언어 기능이지만 몇 가지 추가 이점이 있다. 자신의 어휘 범위에서 블록을 정의하는 대신 일반적으로 블록을 다른 함수 또는 메서드 내에 정의하여 해당 함수 또는 메서드의 다른 변수에 접근할 수 있다. 블록을 원본 범위 밖으로 이동하고 힙에 복사할 수도 있다. 디스패치 큐에 블록을 제출하면 블록이 복사된다. 이러한 모든 의미는 상대적으로 적은 코드로 매우 동적인 작업을 구현할 수 있게 한다.
 
 
-디스패치 큐는 Grand Central Dispatch 기술의 일부이며 C 런타임의 일부인다. 애플리케이션에서 디스패치 큐 사용에 대한 자세한 내용은 [Dispatch Queues](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW1)를 참조. 블록 및 이점에 대한 자세한 내용은 [Blocks Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40007502) 참조.
+디스패치 큐는 Grand Central Dispatch 기술의 일부이며 C 런타임의 일부이다. 애플리케이션에서 디스패치 큐 사용에 대한 자세한 내용은 [Dispatch Queues](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW1)를 참조. 블록 및 이점에 대한 자세한 내용은 [Blocks Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40007502) 참조.
 
 
 #### Dispatch Sources
@@ -54,11 +54,11 @@
 * Custom events that you trigger
 
 
-디스패치 소느는 Grand Central Dispatch 기술의 일부이다. 디스패치 소스를 사용하여 애플리케이션에서 이벤트를 수신하는 방법에 대한 자세한 내용은 [Dispatch Sources](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/GCDWorkQueues/GCDWorkQueues.html#//apple_ref/doc/uid/TP40008091-CH103-SW1)를 참조.
+디스패치 소스는 Grand Central Dispatch 기술의 일부이다. 디스패치 소스를 사용하여 애플리케이션에서 이벤트를 수신하는 방법에 대한 자세한 내용은 [Dispatch Sources](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/GCDWorkQueues/GCDWorkQueues.html#//apple_ref/doc/uid/TP40008091-CH103-SW1)를 참조.
 
 
 #### Operation Queues
-연산 큐는 동시 디스패치 큐와 동일한 Cocoa이며 [NSOperationQueue](https://developer.apple.com/documentation/foundation/operationqueue) 클래스에 의해 구현된다. 디스패치 큐는 항상 선입선출 순서로 작업을 실행하지만 연산 큐는 작업의 실행 순서를 결정할 때 다른 요인을 고려한다. 이러한 요소 중 가장 중요한 것은 주어진 작업이 다른 작업의 완료 여부에 의존하는지 여부이다. 작업을 정의할 때 종속성을 구성하고 이를 사용하여 작업에 대한 복잡한 실행 순서 그래프를 만들 수 있다.
+연산 큐는 동시 디스패치 큐와 동일한 Cocoa이며 [NSOperationQueue](https://developer.apple.com/documentation/foundation/operationqueue) 클래스에 의해 구현된다. 디스패치 큐는 항상 선입선출 순서로 작업을 실행하지만 연산 큐는 작업의 실행 순서를 결정할 때 다른 요인을 고려한다. 이러한 요소 중 가장 중요한 것은 주어진 작업이 다른 작업의 완료 여부에 종속하는지 여부이다. 작업을 정의할 때 종속성을 구성하고 이를 사용하여 작업에 대한 복잡한 실행 순서 그래프를 만들 수 있다.
 
 
 연산 큐에 제출하는 작업은 [NSOperation](https://developer.apple.com/documentation/foundation/nsoperation) 클래스의 인스턴스여야 한다. 연산 객체는 수행할 작업과 해당 작업을 수행하는 데 필요한 데이터를 캡슐화하는 Objective-C 객체이다. 기본적으로 NSOperation 클래스는 추상 기본 클래스이기 때문에 일반적으로 커스텀 서브 클래스를 정의하여 작업을 수행한다. 그러나 Foundation 프레임 워크에는 작업을 수행하기 위해 만들고 사용할 수 있는 몇 가지 구체적인 서브 클래스가 포함되어 있다. 
