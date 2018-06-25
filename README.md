@@ -106,7 +106,7 @@
 
 > Views and Controls
 * [UIScrollView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollView)
-    *[UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
+    * [UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
 * UIControl
     * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
 * [UIDatePicker](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIDatePicker)
