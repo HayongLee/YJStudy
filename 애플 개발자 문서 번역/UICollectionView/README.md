@@ -3,7 +3,36 @@
 
 
 * [Overview](#overview)
+* [Collection Views and Layout Objects](#collection-views-and-layout-objects)
+* [Creating Cells and Supplementary Views](#creating-cells-and-supplementary-views)
+* [Reordering Items Interactively](#reordering-items-interactively)
+* [Interface Builder Attributes](#interface-builder-attributes)
+* [Internationalization](#internationalization)
+* [Accessibility](#accessibility)
 * [Topics](#topics)
+    * [Initializing a Collection View](#initializing-a-collection-view)
+    * [Providing the Collection View Data](#providing-the-collection-view-data)
+    * [Managing Collection View Interactions](#managing-collection-view-interactions)
+    * [Configuring the Background View](#configuring-the-background-view)
+    * [Prefetching Collection View Cells and Data](#prefetching-collection-view-cells-and-data)
+    * [Creating Collection View Cells](#creating-collection-view-cells)
+    * [Changing the Layout](#changing-the-layout)
+    * [Getting the State of the Collection View](#getting-the-state-of-the-collection-view)
+    * [Inserting, Moving, and Deleting Items](#inserting-moving-and-deleting-items)
+    * [Inserting, Moving, and Deleting Sections](#inserting-moving-and-deleting-sections)
+    * [Reordering Items Interactively](#reordering-items-interactively-1)
+    * [Managing Drag Interactions](#managing-drag-interactions)
+    * [Managing Drop Interactions](#managing-drop-interactions)
+    * [Managing the Selection](#managing-the-selection)
+    * [Managing Focus](#managing-focus)
+    * [Locating Items and Views in the Collection View](#locating-items-and-views-in-the-collection-view)
+    * [Getting Layout Information](#getting-layout-information)
+    * [Scrolling an Item Into View](#scrolling-an-item-into-view)
+    * [Animating Multiple Changes to the Collection View](#animating-multiple-changes-to-the-collection-view)
+    * [Reloading Content](#reloading-content)
+    * [Constants](#constants)
+    * [Type Properties](#type-properties)
+    * [Enumerations](#enumerations)
 * [Relationships](#relationships)
 * [See Also](#see-also)
 
@@ -30,7 +59,7 @@
 일반적으로 컬렉션 뷰를 만들 때 레이아웃 객체를 지정하지만 컬렉션 뷰의 레이아웃을 동적으로 변경할 수도 있다. 레이아웃 객체는 [collectionViewLayout](https://developer.apple.com/documentation/uikit/uicollectionview/1618047-collectionviewlayout) 프로퍼티에 저장된다. 이 프로퍼티를 직접 설정하면 변경 내용에 애니메이션을 적용하지 않고 즉시 레이아웃이 업데이트 된다. 변경 사항을 애니메이션으로 적용하려면 [setCollectionViewLayout(_:animated:completion:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout) 메서드를 대신 호출해야 한다.
 
 
-제스처 인식기 또는 터치 이벤트에 의해 구동되는 상호 작용하는 전환을 만들려면 [startInteractiveTransition(to:completion:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618098-startinteractivetransition) 메서드를 사용하여 레이아웃 객체를 변경한다. 이 메서드는 중간 레이아웃 객체를 설치한다. 이 객체의 목적은 동작 진행을 추적하기 위해 제스처 인식기 또는 이벤트 처리 코드를 사용하는 것이다. 이벤트 처리 코드에서 전환이 완료되었다고 판단하면 [finishInteractiveTransition()](https://developer.apple.com/documentation/uikit/uicollectionview/1618080-finishinteractivetransition) 또는 [cancellInteractiveTransition()](https://developer.apple.com/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition) 메서드를 호출하여 중간 레이아웃 객체를 제거하고 의도한 타겟 레이아웃 객체를 설치한다.
+제스처 인식기 또는 터치 이벤트에 의해 구동되는 상호 작용하는 전환을 만들려면 [startInteractiveTransition(to:completion:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618098-startinteractivetransition) 메서드를 사용하여 레이아웃 객체를 변경한다. 이 메서드는 중간 레이아웃 객체를 설치한다. 이 객체의 목적은 동작 진행을 추적하기 위해 제스처 인식기 또는 이벤트 처리 코드를 사용하는 것이다. 이벤트 처리 코드에서 전환이 완료되었다고 판단하면 [finishInteractiveTransition()](https://developer.apple.com/documentation/uikit/uicollectionview/1618080-finishinteractivetransition) 또는 [cancelInteractiveTransition()](https://developer.apple.com/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition) 메서드를 호출하여 중간 레이아웃 객체를 제거하고 의도한 타겟 레이아웃 객체를 설치한다.
 
 
 &nbsp;      
@@ -50,11 +79,11 @@
 
 
 &nbsp;      
-### Reordering Items Interactively
+## Reordering Items Interactively
 컬렉션 뷰를 사용하면 사용자 상호 작용을 기반으로 아이템을 이동할 수 있다. 일반적으로 컬렉션 뷰의 아이템 순서는 데이터 소스에 의해 정의된다. 사용자가 아이템을 재정렬하는 기능을 지원하면 컬렉션 뷰 아이템과의 사용자 상호 작용을 추적하고 해당 아이템의 위치를 업데이트하도록 제스처 인식기를 구성 할 수 있다.
 
 
-아이템의 상호 작용하는 위치 변경을 시작하려면 컬렉션 뷰의 [beginInteractiveMovementForItem(at:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitem) 메서드를 호출한다. 제스처 인식기가 터치 이벤트를 추적하는 동안 [updateInteractiveMovementTargetPosition(_:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp) 메서드를 호출하여 터치 위치의 변경사항을 보고한다. 제스처 추적을 마쳤으면 [endInteractiveMovement()](https://developer.apple.com/documentation/uikit/uicollectionview/1618082-endinteractivemovement) 또는 [cancellInteractiveMovement](https://developer.apple.com/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement) 메서드를 호출하여 상호 작용을 완료하고 컬렉션 뷰를 업데이트한다.
+아이템의 상호 작용하는 위치 변경을 시작하려면 컬렉션 뷰의 [beginInteractiveMovementForItem(at:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitem) 메서드를 호출한다. 제스처 인식기가 터치 이벤트를 추적하는 동안 [updateInteractiveMovementTargetPosition(_:)](https://developer.apple.com/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp) 메서드를 호출하여 터치 위치의 변경사항을 보고한다. 제스처 추적을 마쳤으면 [endInteractiveMovement()](https://developer.apple.com/documentation/uikit/uicollectionview/1618082-endinteractivemovement) 또는 [cancelInteractiveMovement](https://developer.apple.com/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement) 메서드를 호출하여 상호 작용을 완료하고 컬렉션 뷰를 업데이트한다.
 
 
 사용자 상호 작용 중에 컬렉션 뷰는 레이아웃을 동적으로 무효화하여 아이템의 현재 위치를 반영한다. 아무것도 하지 않으면 기본 레이아웃 동작이 아이템의 위치를 변경하지만 필요에 따라 레이아웃 애니메이션을 커스텀화 할 수 있다. 상호 작용이 끝나면 데이터 소스 객체가 아이템의 새 위치로 업데이트된다.
@@ -66,7 +95,7 @@ UICollectionViewController 클래스는 관리되는 컬렉션 뷰에서 아이�
 &nbsp;      
 ## Interface Builder Attributes
 아래 표는 인터페이스 빌더에서 컬렉션 뷰에 대해 구성하는 속성을 나열한 것이다.
-**Attribute** | **Description**
+Attribute | Description
 ----- | -----
 Items | 프로토타입 셀의 수. 이 프로퍼티는 스토리보드에서 구성할 프로토타입 셀의 지정된 수를 제어한다. 커렉션 뷰에는 항상 하나 이상의 셀이 있어야 하며 다른 타입의 콘텐츠를 표시하거나 동일한 콘텐츠를 다른 방식으로 표시하기 위해 여러 개의 셀이 있을 수 있다.
 Layout | 사용할 레이아웃 객체이다. 이 컨트롤을 사용하여 [UICollectionViewFlowLayout](https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout) 객체와 사용자가 정의한 커스텀 레이아웃 객체 중에서 선택한다. 플로우 레이아웃을 선택하면 컬렉션 뷰의 콘텐츠에 대한 스크롤 방향과 플로우 레이아웃의 헤더 및 푸터가 있는지 여부를 구성할 수도 있다. 헤더 및 푸터를 사용하면 헤더 및 푸터 콘텐츠로 구성 할 수 있고 재사용할 수 있는 뷰가 스토리보드에 추가된다. 프로그래밍 방식으로 이러한 뷰를 만들 수도 있다. 커스텀 레이아웃을 선택하면 사용할 [UICollectionViewLayout](https://developer.apple.com/documentation/uikit/uicollectionviewlayout) 서브 클래스를 지정해야 한다.
