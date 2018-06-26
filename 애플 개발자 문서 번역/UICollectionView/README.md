@@ -99,7 +99,7 @@ UICollectionViewController 클래스는 관리되는 컬렉션 뷰에서 아이�
 
 **Attribute** | **Description**
 ----- | -----
-Items | 프로토타입 셀의 수. 이 프로퍼티는 스토리보드에서 구성할 프로토타입 셀의 지정된 수를 제어한다. 커렉션 뷰에는 항상 하나 이상의 셀이 있어야 하며 다른 타입의 콘텐츠를 표시하거나 동일한 콘텐츠를 다른 방식으로 표시하기 위해 여러 개의 셀이 있을 수 있다.
+Items | 프로토타입 셀의 수. 이 프로퍼티는 스토리보드에서 구성할 프로토타입 셀의 지정된 수를 제어한다. 컬렉션 뷰에는 항상 하나 이상의 셀이 있어야 하며 다른 타입의 콘텐츠를 표시하거나 동일한 콘텐츠를 다른 방식으로 표시하기 위해 여러 개의 셀이 있을 수 있다.
 Layout | 사용할 레이아웃 객체이다. 이 컨트롤을 사용하여 [UICollectionViewFlowLayout](https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout) 객체와 사용자가 정의한 커스텀 레이아웃 객체 중에서 선택한다. 플로우 레이아웃을 선택하면 컬렉션 뷰의 콘텐츠에 대한 스크롤 방향과 플로우 레이아웃의 헤더 및 푸터가 있는지 여부를 구성할 수도 있다. 헤더 및 푸터를 사용하면 헤더 및 푸터 콘텐츠로 구성 할 수 있고 재사용할 수 있는 뷰가 스토리보드에 추가된다. 프로그래밍 방식으로 이러한 뷰를 만들 수도 있다. 커스텀 레이아웃을 선택하면 사용할 [UICollectionViewLayout](https://developer.apple.com/documentation/uikit/uicollectionviewlayout) 서브 클래스를 지정해야 한다.
 
 
