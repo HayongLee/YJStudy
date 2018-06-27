@@ -106,6 +106,12 @@
 * [UIStoryboardSegue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIStoryboardSegue)
 
 > Views and Controls
+* [UICollectionView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionView)
+    * [UICollectionViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDataSource)
+    * [UICollectionViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegate)
+* [UICollectionViewCell](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewCell)
+* [UICollectionViewFlowLayout](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewFlowLayout)
+    * [UICollectionViewDelegateFlowLayout](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegateFlowLayout)
 * [UIScrollView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollView)
     * [UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
 * UIControl
