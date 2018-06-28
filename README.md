@@ -9,7 +9,12 @@
 * [개발](#개발)
     * [iOS](#ios)
 * [애플 개발자 문서 번역](#애플-개발자-문서-번역)
-
+    * [Foundation](#foundation)
+    * [UIKit](#uikit)
+    * [AVFoundation](#avfoundation)
+    * [Photos](#photos)
+    * [Other Article](#other-article)
+    
 
 &nbsp; 
 ## CS
@@ -115,7 +120,8 @@
 
 #### Views and Controls
 > Container Views
-
+* [UIScrollView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollView)
+    * [UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
 > Collection Views
 * [UICollectionView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionView)
     * [UICollectionViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDataSource)
@@ -123,8 +129,6 @@
 * [UICollectionViewCell](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewCell)
 * [UICollectionViewFlowLayout](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewFlowLayout)
     * [UICollectionViewDelegateFlowLayout](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegateFlowLayout)
-* [UIScrollView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollView)
-    * [UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
 > Controls
 * UIControl
     * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
