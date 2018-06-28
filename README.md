@@ -80,7 +80,7 @@
 &nbsp; 
 ### 애플 개발자 문서 번역
 #### Foundation
-> Date and Times
+##### Date and Times
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
 
 > Task Management
@@ -134,6 +134,11 @@
 * [UINavigationItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UINavigationItem)
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
     * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+* [UIActivityViewController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityViewController)
+* [UIActivityItemProvider](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityItemProvider)
+* [UIActivityItemSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityItemSource)
+* [UIActivity](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivity)
+
 
 > Touches, Press, and Gestures
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
