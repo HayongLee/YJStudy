@@ -81,31 +81,34 @@
 ### 애플 개발자 문서 번역
 #### Foundation
 ##### Date and Times
+> Date Formatting
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
 
-> Task Management
+##### Task Management
+> Operations
 * [Operation](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Operation)
 * [OperationQueue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/OperationQueue)
+> Scheduling
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
 
-> Archives and Serialization
+##### Archives and Serialization
 * [Encoding and Decoding Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Encoding%20and%20Decoding%20Custom%20Types)
 * [Codable, Encodable, Decodable, CodingKey](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Codable%2C%20Encodable%2C%20Decodable%2C%20CodingKey)
 * [Using JSON with Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Using%20JSON%20with%20Custom%20Types)
 * [JSONEncoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONEncoder)
 * [JSONDecoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONDecoder)
 
-> Preferences
+##### Preferences
 * [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
 
 #### UIKit
-> Core App
+##### Core App
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
 
-> Resource Management
+##### Resource Management
 * [UIStoryboardSegue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIStoryboardSegue)
 
-> Views and Controls
+##### Views and Controls
 * [UICollectionView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionView)
     * [UICollectionViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDataSource)
     * [UICollectionViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegate)
@@ -128,7 +131,7 @@
 * [UIBarButtonItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIBarButtonItem)
     * [UIBarButtonItem.SystemItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIBarButtonItem.SystemItem)
 
-> View Controllers
+##### View Controllers
 * UIViewController
     * [prepare(for:sender:)](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/prepare(forsender))
 * [UINavigationItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UINavigationItem)
@@ -140,19 +143,19 @@
 * [UIActivity](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivity)
 
 
-> Touches, Press, and Gestures
+##### Touches, Press, and Gestures
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
 * [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
 
 #### AVFoundation
-> Media Assets, Playback, and Editing
+##### Media Assets, Playback, and Editing
 * [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
 
-> System Audio Interaction
+##### System Audio Interaction
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
     * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
 
-> Audio Track Engineering
+##### Audio Track Engineering
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
     * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
     
