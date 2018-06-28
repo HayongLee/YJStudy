@@ -8,7 +8,7 @@
     * [운영 체제](#운영-체제)
 * [개발](#개발)
     * [iOS](#ios)
-    * [애플 개발자 문서 번역](#애플-개발자-문서-번역)
+* [애플 개발자 문서 번역](#애플-개발자-문서-번역)
 
 
 &nbsp; 
@@ -78,37 +78,45 @@
 
 
 &nbsp; 
-### 애플 개발자 문서 번역
-#### Foundation
-##### Date and Times
+## 애플 개발자 문서 번역
+### Foundation
+#### Date and Times
 > Date Formatting
 * [DateFormatter](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/DateFormatter)
 
-##### Task Management
+#### Task Management
 > Operations
 * [Operation](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Operation)
 * [OperationQueue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/OperationQueue)
 > Scheduling
 * [Timer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Timer)
 
-##### Archives and Serialization
+#### Archives and Serialization
+> First Steps
 * [Encoding and Decoding Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Encoding%20and%20Decoding%20Custom%20Types)
 * [Codable, Encodable, Decodable, CodingKey](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Codable%2C%20Encodable%2C%20Decodable%2C%20CodingKey)
+> JSON
 * [Using JSON with Custom Types](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Using%20JSON%20with%20Custom%20Types)
 * [JSONEncoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONEncoder)
 * [JSONDecoder](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/JSONDecoder)
 
-##### Preferences
+#### Preferences
+> App-Specific Data
 * [UserDefaults](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UserDefaults)
 
-#### UIKit
-##### Core App
+### UIKit
+#### Core App
+> Application
 * [UIApplication](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIApplication)
 
-##### Resource Management
+#### Resource Management
+> Storyboards
 * [UIStoryboardSegue](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIStoryboardSegue)
 
-##### Views and Controls
+#### Views and Controls
+> Container Views
+
+> Collection Views
 * [UICollectionView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionView)
     * [UICollectionViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDataSource)
     * [UICollectionViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegate)
@@ -117,52 +125,64 @@
     * [UICollectionViewDelegateFlowLayout](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UICollectionViewDelegateFlowLayout)
 * [UIScrollView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollView)
     * [UIScrollViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIScrollViewDelegate)
+> Controls
 * UIControl
     * [UIControlEvents](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIControlEvents)
 * [UIDatePicker](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIDatePicker)
+> Table Views
 * [UITableView](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableView)
     * [UITableViewDataSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDataSource)
     * [UITableViewDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewDelegate)
     * [dequeueReusableCell(withIdentifier:for:)](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/dequeueReusableCell(withIdentifierfor))
 * [UITableViewCell](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITableViewCell)
+> Text Views
 * [UITextField](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextField)
     * [UITextFieldDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UITextFieldDelegate)
+> Bars
 * [UIBarItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIBarItem)
 * [UIBarButtonItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIBarButtonItem)
     * [UIBarButtonItem.SystemItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIBarButtonItem.SystemItem)
 
-##### View Controllers
+#### View Controllers
+> Custom View Controllers
 * UIViewController
     * [prepare(for:sender:)](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/prepare(forsender))
+> Navigation Interface
 * [UINavigationItem](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UINavigationItem)
+> Images and Video
 * [UIImagePickerController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerController)
     * [UIImagePickerControllerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIImagePickerControllerDelegate)
+> Activities Interface
 * [UIActivityViewController](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityViewController)
 * [UIActivityItemProvider](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityItemProvider)
 * [UIActivityItemSource](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivityItemSource)
 * [UIActivity](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIActivity)
 
 
-##### Touches, Press, and Gestures
+#### Touches, Press, and Gestures
+> Custom Gestures
 * [UIGestureRecognizer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizer)
 * [UIGestureRecognizerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/UIGestureRecognizerDelegate)
 
-#### AVFoundation
-##### Media Assets, Playback, and Editing
+### AVFoundation
+#### Media Assets, Playback, and Editing
+> Creating a Basic Video Player (iOS and tvOS)
 * [Enabling Background Audio](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Enabling%20Background%20Audio)
 
-##### System Audio Interaction
+#### System Audio Interaction
+> Using an Audio Session
 * [AVAudioSession](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSession)
     * [AVAudioSessionCategoryPlayback](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioSessionCategoryPlayback)
 
-##### Audio Track Engineering
+#### Audio Track Engineering
+> Single Track Playback and Recording
 * [AVAudioPlayer](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayer)
     * [AVAudioPlayerDelegate](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/AVAudioPlayerDelegate)
     
-#### PhotoKit
+### Photos
 * [PhotoKit](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/PhotoKit)
 
-#### Other Article
+### Other Article
 * [Adopting Cocoa Design Patterns](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Adopting%20Cocoa%20Design%20Patterns)
 * [Concurrency Programming Guide](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Concurrency%20Programming%20Guide)
 * [Human Interface Guidelines](https://github.com/0jun0815/YJStudy/tree/master/애플%20개발자%20문서%20번역/Human%20Interface%20Guidelines)
