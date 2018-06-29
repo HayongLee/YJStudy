@@ -106,7 +106,7 @@ Stand-alone의 장점은 구축이 매우 간단해서 소규모 작업이나 �
 
 
 &nbsp;
-![클라이언트/서버 구성]()
+![클라이언트/서버 구성](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/클라이언트:서버%20구성.jpg)
 
 
 &nbsp;
@@ -152,7 +152,7 @@ Web 3계층은 시스템을 다음 3가지 계층의 조합으로 생각하는 �
 
 
 &nbsp;
-![Web 3계층]()
+![Web 3계층](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/Web%203계층.jpg)
 
 
 &nbsp;
@@ -209,7 +209,7 @@ Web 3계층의 장점으로 Stand-alone 구성의 단점 중 2가지 문제(1. �
 
 
 &nbsp;
-![시스템 가동률]()
+![시스템 가동률](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/시스템%20가동률.jpg)
 
 
 &nbsp;
@@ -249,7 +249,7 @@ DB 서버는 다중화에서 특유의 어려운 문제점을 안고 있다. 그
 
 
 &nbsp;
-![데이터베이스는 서버와 저장소로 구성된다]()
+![데이터베이스는 서버와 저장소로 구성된다](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/데이터베이스는%20서버와%20저장소로%20구성된다.jpg)
 
 
 &nbsp;
@@ -262,7 +262,7 @@ DB 서버는 다중화에서 특유의 어려운 문제점을 안고 있다. 그
 
 
 &nbsp;
-![DB 서버 다중화의 기본 구성]()
+![DB 서버 다중화의 기본 구성](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/DB%20서버%20다중화의%20기본%20구성.jpg)
 
 
 &nbsp;
@@ -283,7 +283,7 @@ Active-Active 구성은 2가지 장점이 있는데, 한 가지는 시스템 다
 
 
 &nbsp;
-![Active-Active 구성의 장점과 과제]()
+![Active-Active 구성의 장점과 과제](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/Active-Active%20구성의%20장점과%20과제.jpg)
 
 
 &nbsp;
@@ -291,7 +291,7 @@ Active-Standby 구성에서는 보통 Standby 상태의 DB 서버는 사용되�
 
 
 &nbsp;
-![Active-Standby 구성에서 장애를 검사하고 알아내는 과정]
+![Active-Standby 구성에서 장애를 검사하고 알아내는 과정](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/Active-Standby%20구성에서%20장애를%20검사하고%20알아내는%20과정.jpg)
 
 
 &nbsp;
@@ -326,7 +326,7 @@ Active-Active와 Active-Standby 클러스터 구성에서는 서버 부분은 �
 
 
 &nbsp;
-![리플리케이션은 데이터를 복제한다]()
+![리플리케이션은 데이터를 복제한다](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/리플리케이션은%20데이터를%20복제한다.jpg)
 
 
 &nbsp;
@@ -358,7 +358,7 @@ Active-Active와 Active-Standby 클러스터 구성에서는 서버 부분은 �
 
 
 &nbsp;
-![피라미드형의 리플리케이션 구성]()
+![피라미드형의 리플리케이션 구성](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/피라미드형의%20리플리케이션%20구성.jpg)
 
 
 &nbsp;
@@ -380,7 +380,7 @@ Shared Nothing은 문자 그대로 '아무것도 공유하지 않는다'란 의�
 
 
 &nbsp;
-![Shared Disk와 Shared Nothing의 구성 비교]()
+![Shared Disk와 Shared Nothing의 구성 비교](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/Shared%20Disk와%20Shared%20Nothing의%20구성%20비교.jpg)
 
 
 &nbsp;
@@ -388,7 +388,7 @@ Shared Nothing에서는 DB 서버와 저장소의 세트를 늘려서 저장소�
 
 
 &nbsp;
-![Shared Disk와 Shared Nothing의 성능 비교]()
+![Shared Disk와 Shared Nothing의 성능 비교](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/Shared%20Disk와%20Shared%20Nothing의%20성능%20비교.jpg)
 
 
 &nbsp;
@@ -408,7 +408,7 @@ Shared Nothing의 단점은 저장소를 공유하지 않아 결국 '각각의 D
 
 
 &nbsp;
-![데이터베이스의 아키텍처 패턴]()
+![데이터베이스의 아키텍처 패턴](https://github.com/0jun0815/YJStudy/blob/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해/images/데이터베이스의%20아키텍처%20패턴.jpg)
 
 
 &nbsp;
