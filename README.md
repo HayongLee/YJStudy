@@ -22,6 +22,8 @@
 * [데이터베이스란 - 용도와 역할](https://github.com/0jun0815/YJStudy/tree/master/데이터베이스/데이터베이스란%20-%20용도와%20역할)
 * [관계형 데이터베이스란 - 가장 대표적인 데이터베이스](https://github.com/0jun0815/YJStudy/tree/master/데이터베이스/관계형%20데이터베이스란%20-%20가장%20대표적인%20데이터베이스)
 * [데이터베이스에 얽힌 돈 이야기 - 초기비용과 운영비용](https://github.com/0jun0815/YJStudy/tree/master/데이터베이스/데이터베이스에%20얽힌%20돈%20이야기%20-%20초기비용과%20운영비용)
+* [데이터베이스와 아키텍처 구성 - 견고하고 고속의 시스템을 구축하기 위해](https://github.com/0jun0815/YJStudy/tree/master/데이터베이스/데이터베이스와%20아키텍처%20구성%20-%20견고하고%20고속의%20시스템을%20구축하기%20위해)
+
 
 ### 알고리즘
 * [스택](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/스택)
@@ -30,10 +32,12 @@
 * [우선순위 큐](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/우선순위%20큐)
 * [연결 리스트(스택 리스트)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/연결%20리스트(스택%20리스트))
 
+
 #### 정렬
 * [삽입 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/삽입%20정렬)
 * [병합 정렬](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/병합%20정렬)
 * [신속 정렬(퀵 정렬)](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/신속%20정렬(퀵%20정렬))
+
 
 #### 트리
 * [트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트리)
@@ -45,8 +49,10 @@
 * [AVL 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/AVL%20트리)
 * [트라이 트리](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/트라이%20트리)
 
+
 #### 검색
 * [다양한 서브스트링 검색 알고리즘](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/다양한%20서브스트링%20검색%20알고리즘)
+
 
 #### 그래프
 * [그래프](https://github.com/0jun0815/YJStudy/tree/master/알고리즘/그래프)
